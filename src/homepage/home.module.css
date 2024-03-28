@@ -1,0 +1,184 @@
+body{
+    background-color: #FFFFFF;
+    height: 1000px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(74, 245, 74, 0.5);
+    z-index: -1;
+    padding: 0 40px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+
+}
+
+.nav li :hover{
+    background-color: #08F25A;
+    padding: 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: #1E1E1E;
+    padding: 7px 15px;
+    
+}
+
+
+hhhh{
+    /* Frame 1000008634 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 900px;
+height: 284px;
+left: calc(50% - 900px/2);
+top: calc(50% - 284px/2 - 414px);
+
+
+}
+.section{
+  
+    /* height: 284px; */
+    /* width: 900px; */
+    text-align: center;
+    margin: 10px auto;
+}
+.para{
+    margin: 70px;
+}
+.para :nth-child(1){
+    padding: 20px;
+    font-size: x-large;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    /* width: 100% */
+}
+.para:nth-child(2){
+    font-size: 13px;
+    padding: 5px;
+    /* margin: 5px; */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+.spanbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+    /* background-color: #FFE178; */
+    
+}
+.spanbtn > * {
+    background-color: #FFE178;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: 081B11;
+
+}
+.spanbtn a {
+    color: 081B11;
+    text-decoration: none;
+}
+.spanbtn a:hover{
+    color: #07ed57;
+}
+
+
+/* Countryside workers out in the field */
+/* 
+position: absolute;
+width: 666px;
+height: 415px;
+left: calc(50% - 666px/2 - 289px);
+top: 525px;
+
+background: url(.png);
+border-radius: 32px; */
+
+.spanbtn button{
+    padding: 10px;
+    background-color: #FFE178;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.fleximage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer{
+    /* width: 900px; */
+    height: 300px;
+    background-color: #081B11;
+    color: #FFFFFF;
+    margin: 30px auto;
+    padding: 50px;
+}
+.flexitemm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.connect { 
+    padding: 25px 0;
+    /* line-height: 20px; */
+
+}
+.flexnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 20px auto; */
+
+}
+
+.flexnav > * {
+margin-left: 70px;
+}
+.navbar ul{
+    list-style: none;
+    margin: 10px auto;
+    
+    
+}
+.navbar li{
+    padding: 10px 0;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}.agrolink{
+    padding: 30px 0;
+}
