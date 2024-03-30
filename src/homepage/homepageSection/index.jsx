@@ -1,10 +1,10 @@
 import logotwo from "../../images/logo-two.png";
 import logoone from "../../images/logo-one.png";
 import styles from "../../homepage/home.module.css"
-// import "../../App";
+import "../../App";
 const HomePageSection = function(){
     return (
-        <div className={styles.container}>
+        <div className="container">
           <div className={styles.section}>
             <div className={styles.para}>
               <p>

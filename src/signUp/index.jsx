@@ -2,6 +2,8 @@ import Button from "../homepage/button/button";
 import styles from "../signIn/sign.module.css";
 import { object, string, number } from "yup";
 import { Formik } from "formik";
+import Header from "../component/header";
+import Footer from "../component/footer";
 
 let userSchema = object({
   name: string().required(),
@@ -14,6 +16,7 @@ const SignUp = function () {
   return (
     <div>
       <div className="container">
+        <Header/>
         <div className={styles.formflextwo}>
           <div className={styles.wrap}>
             <h2>
@@ -26,6 +29,7 @@ const SignUp = function () {
           </div>
           <Form></Form>
         </div>
+        <Footer/>
       </div>
     </div>
   );
@@ -81,7 +85,7 @@ const Form = function () {
             <Button variant="primary">Sign Up</Button>
             <div className={styles.noaccount}>
               <p>
-                Already have an account? <a href="#hhh">Sign In </a>
+                Already have an account? <a href="signin">Sign In </a>
               </p>
               <span>or</span>
               <p>Sign up with</p>

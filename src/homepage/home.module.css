@@ -36,30 +36,7 @@ body{
     padding: 7px 15px;
     
 }
-
-
-hhhh{
-    /* Frame 1000008634 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0px;
-gap: 40px;
-
-position: absolute;
-width: 900px;
-height: 284px;
-left: calc(50% - 900px/2);
-top: calc(50% - 284px/2 - 414px);
-
-
-}
 .section{
-  
-    /* height: 284px; */
-    /* width: 900px; */
     text-align: center;
     margin: 10px auto;
 }
@@ -109,19 +86,6 @@ img {
 .spanbtn a:hover{
     color: #07ed57;
 }
-
-
-/* Countryside workers out in the field */
-/* 
-position: absolute;
-width: 666px;
-height: 415px;
-left: calc(50% - 666px/2 - 289px);
-top: 525px;
-
-background: url(.png);
-border-radius: 32px; */
-
 .spanbtn button{
     padding: 10px;
     background-color: #FFE178;
@@ -136,11 +100,9 @@ border-radius: 32px; */
     gap: 10px;
 }
 .footer{
-    /* width: 900px; */
     height: 300px;
     background-color: #081B11;
     color: #FFFFFF;
-    margin: 30px auto;
     padding: 50px;
 }
 .flexitemm{
@@ -182,3 +144,184 @@ margin-left: 70px;
 }.agrolink{
     padding: 30px 0;
 }
+.numerals{
+    background-color: #E6F9E5 ;
+    color: #08F25A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 1240px;
+    margin: 30px auto;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.farmers{
+    color: #001E00;
+    font-size: larger;
+    padding: 20px auto;
+}
+.numspan{
+    color: #08F25A;
+    font-weight: 900;
+}
+.sectionabout{
+    display: flex;
+    height: 320px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    gap: 20px;
+    padding: 20px;
+}
+.about{
+    padding: 10px 0;
+
+}
+.about h1{
+    padding: 10px 0;
+}
+.about p{
+    padding: 10px 0;
+}
+
+
+.discover{
+    display: flex;
+    /* height: 320px; */
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFE178;
+    height: 450px;
+    border-radius: 10px;
+    width: 1220px;
+    
+}
+.connectcon{
+    background-color: #C6AF63;
+    margin: 12px auto;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.hh h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+   
+}
+
+.hh p{
+    padding-bottom: 20px;
+}
+.help{
+    background-color: #EBF6EF;
+    height: 300px;
+    /* border-radius: 10px; */
+    /* width: 1220px; */
+    margin-bottom: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+.welcome{
+    padding: 20px 0;
+   
+
+}
+.welcome h1 {
+    padding: 10px 0;
+
+}
+.glad p{
+    padding: 10px;
+    line-height: 20px;
+}
+.select{
+    padding: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+.testimonial{
+    text-align: center;
+    font-size: larger;
+    font-weight: 900;
+    padding: 20px 0;
+}
+.nextcon{
+    position: relative;
+}
+.next{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    background-color: #04AA6D;
+    color: white;
+}
+.nextcon a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.nextcon a:hover {
+    background-color: #ddd;
+    color: black;
+  } 
+.previous{
+    position: absolute;
+    right: 50px;
+    bottom: 50%;
+    background-color: #04AA6D;
+    color: white;
+
+}
+.avatarflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.customer p{
+    font-size: larger;
+    line-height: 20px;
+    padding: 40px 0;
+}
+.testimonialcon{
+    margin: 30px auto;
+    width: 1220px;
+
+}
+
+.customer{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+    height: 250px;
+    border-radius: 100px;
+
+}
+.customeravatar{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    column-gap: 20px;
+    text-align: center;
+    height: 100px;
+    border-radius: 100px;
+
+}
+.customeravatar > div{
+    background-color: #C3E5D0;
+}
+.customer > div{
+    background-color: #EBF6EF;
+}
+

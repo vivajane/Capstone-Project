@@ -1,13 +1,15 @@
-// import { Nav } from "../homepage/header";
-// import Footer from "../homepage/footer";
+
 import Button from "../homepage/button/button";
 import styles from "./sign.module.css";
-// import "../App";
+import "../App";
 import "../App.css";
+import Header from "../component/header";
+import Footer from "../component/footer";
 const SignIn = function () {
   return (
     <div>
       <div className="container">
+        <Header/>
         <div className={styles.formflex}>
           <div className={styles.wrap}>
             <h2>Shop Fresh Food Directly from <br /> Farmers</h2>
@@ -18,6 +20,7 @@ const SignIn = function () {
           </div>
           <Form></Form>
         </div>
+        <Footer/>
       </div>
     </div>
   );
@@ -37,7 +40,7 @@ const Form = function () {
       </div>
       <Button variant="primary">Sign In</Button>
       <div className={styles.noaccount}>
-        <p>Don't have an account? <a href="#hhh">Sign Up <br />  </a> </p>
+        <p>Don't have an account? <a href="signUp">Sign Up <br />  </a> </p>
         <span>or</span>
         <p>Sign in with</p>
       </div>

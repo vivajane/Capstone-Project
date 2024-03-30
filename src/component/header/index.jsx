@@ -1,13 +1,11 @@
-// import styles from "../../home.module.css";
+
 import styles from "../../homepage/home.module.css"
-// import Button from "../button/button";
 import logo from "../../images/AgroLink.png";
-// import "../../App";
 const Menus = [
   {
     id: 1,
     title: "Home",
-    link: "/home",
+    link: "/",
   },
   {
     id: 2,
@@ -21,8 +19,8 @@ const Menus = [
   },
   {
     id: 4,
-    title: "Services",
-    link: "/services",
+    title: "Rewards",
+    link: "/reward",
   },
   {
     id: 5,
@@ -34,7 +32,6 @@ const Header = function () {
   return (
     <div className={styles.j}>
       <Nav/>
-      
     </div>
   );
 };
