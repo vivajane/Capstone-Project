@@ -7,11 +7,11 @@ const Discovery = function () {
   return (
     <div className="container">
       <div className={styles.discover}>
-        <div>
+        <div data-aos="flip-up" data-aos-delay="600">
           <img src={logodiscover} alt="discover" />
         </div>
         <div>
-          <div className={styles.hh}>
+          <div className={styles.hh} data-aos="zoom-in-up" data-aos-delay="600">
             <h1>Discover our Services </h1>
             <p>
               Explore our services and experiencen from the direct connection
@@ -20,7 +20,7 @@ const Discovery = function () {
           </div>
           <div>
             <div>
-              <div className={styles.connectcon}>
+              <div className={styles.connectcon} data-aos="zoom-in-up" data-aos-delay="600">
                 <div className={styles.connect}>
                   <img src={connect} alt="connect" />
                 </div>
@@ -32,7 +32,7 @@ const Discovery = function () {
                   </p>
                 </div>
               </div>
-              <div className={styles.connectcon}>
+              <div className={styles.connectcon} data-aos="zoom-in-up" data-aos-delay="600">
                 <div className={styles.connect}>
                   <img src={workshop} alt="workshop" />
                 </div>

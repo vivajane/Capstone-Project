@@ -1,0 +1,108 @@
+.product{
+    width: 100%;
+    margin: 70px auto;
+    
+    
+}
+.flexdeals{
+    background-color: #E6F9E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px ;
+    width: 100%;
+    margin: 5px auto;
+}
+.fast{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.flexi{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fast > div {
+    padding: 20px;;
+}
+.fast > div *{
+    padding: 10px ;
+}
+.producelist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px ;
+    width: 100%;
+    margin: 5px auto;
+    /* margin: 10px;
+    padding: 20px 0; */
+}.product h3{
+    padding: 40px;
+}
+
+li{
+    list-style-type: none;
+
+}
+.li{
+    box-shadow: 1px 2px 3px 1px rgba(20,20,20,0.4);
+    padding: 20px;
+    text-align: center;
+    margin: 2px;
+}
+.popular{
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    margin: 40px 0 ;
+    width: 1200px;
+  
+}
+.spanbtn > * {
+    background-color: #FFE178;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    color: 081B11;
+
+}
+button[variant = "cart"]{
+    background-color: #FFE178;
+    border: transparent;
+    padding: 7px 14px;
+    border-radius: 14px;
+}
+.spanbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+    /* background-color: #FFE178; */
+    
+}
+.spanbtn a {
+    color: 081B11;
+    text-decoration: none;
+}
+.spanbtn a:hover{
+    color: #07ed57;
+}
+.need{
+    /* padding: 10px 0; */
+}
+.need p{
+    padding: 20px auto;
+    margin: 10px auto;
+}
+
+.hand{
+    display: flex;
+    margin: 10px auto;
+    width: 1200px;
+    padding: 20px auto;
+}

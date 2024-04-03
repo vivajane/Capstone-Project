@@ -1,7 +1,11 @@
 // import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.css';
+import AOS from 'aos';
+import { useEffect } from 'react';
+import 'aos/dist/aos.css';
 import './App.css';
 import Homepage from './homepage';
-import Producepage from './producePage';
+import Producepage from "./producePage"
 import CommunityPage from './communityPage';
 import AccountPage from './accountPage';
 import RewardsPage from './rewardPage';
@@ -17,6 +21,9 @@ import {
 } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const router = createBrowserRouter([
     {
       path: "/",

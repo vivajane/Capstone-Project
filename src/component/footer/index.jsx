@@ -65,11 +65,11 @@ const Footer = function () {
           
             <div className={styles.flexitemm}>
               <div>
-                <div className={styles.agrolink}>
+                <div  data-aos="zoom-in-down" data-aos-delay="600"className={styles.agrolink}>
                   <img src={logotwo} alt="agrolink" />
                 </div>
 
-                <div className={styles.divconnect}>
+                <div data-aos="zoom-in-up" data-aos-delay="600" className={styles.divconnect}>
                   <p className={styles.connect}>
                     Agro Links connects farmers directly to consumers <br /> to make
                     the freshest agricultural products available <br /> and without
@@ -78,7 +78,7 @@ const Footer = function () {
                 </div>
               </div>
               <div className={styles.flexnav}>
-                <div>
+                <div data-aos="flip-left" data-aos-delay="600">
                   <h2>Company</h2>
                   <ul className={styles.unordered}>
                     {
@@ -88,7 +88,7 @@ const Footer = function () {
                     }
                   </ul>
                 </div>
-                <div>
+                <div data-aos="zoom-in-up" data-aos-delay="600">
                   <h2>Company</h2>
                   <ul>
                     {
@@ -98,7 +98,7 @@ const Footer = function () {
                     }
                   </ul>
                 </div>
-                <div>
+                <div data-aos="flip-right" data-aos-delay="600">
                   <h2>Social Media</h2>
                   <ul>
                     {

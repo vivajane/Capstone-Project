@@ -14,11 +14,11 @@ let userSchema = object({
 
 const SignUp = function () {
   return (
-    <div>
+    <div className={styles.signuup}>
       <div className="container">
         <Header/>
         <div className={styles.formflextwo}>
-          <div className={styles.wrap}>
+          <div className={styles.wrap} data-aos="zoom-in-up" data-aos-delay="400" >
             <h2>
               Shop Fresh Food Directly from <br /> Farmers
             </h2>
@@ -51,7 +51,7 @@ const Form = function () {
         values,
       }) => {
         return (
-          <form action="" className={styles.formactiontwo}>
+          <form data-aos="zoom-in-up" data-aos-delay="600"  action="" className={styles.formactiontwo}>
             <h3>Create an account</h3>
             <div className={styles.labelone}>
               <label htmlFor="fullname">Full Name</label>

@@ -1,6 +1,4 @@
-.communitygen{
-    /* position: relative; */
-}
+
 .community{
    /* position: absolute; */
    display: flex;
@@ -60,4 +58,47 @@
 .btn a:hover{
     color: #1d231f;
     background-color: #07ed57;
+}
+.accountcon{
+    margin: 120px auto;
+    background-color: #F3F3F3;
+    height: 300px;
+    width: 300px;
+}
+.sec , .tert{
+    margin: 20px;
+}
+
+.accountcon h3{
+    padding: 20px ;
+}
+button[variant = "secondary"]{
+    border: none;
+    background-color: #FFE178;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 200px;
+    cursor: pointer;
+    color: #000000;
+    padding: 10px;
+
+  
+}
+button[variant = "tertiary"]{
+    border: none;
+    background-color: #CB1A14;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    width: 200px;
+    cursor: pointer;
+    color: #000000;
+    padding: 10px;
+
+
 }

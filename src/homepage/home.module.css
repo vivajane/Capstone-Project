@@ -101,9 +101,12 @@ img {
 }
 .footer{
     height: 300px;
+    width: 100%;
     background-color: #081B11;
     color: #FFFFFF;
     padding: 50px;
+    /* margin: 20px auto; */
+    overflow: hidden;
 }
 .flexitemm{
     display: flex;
@@ -112,14 +115,14 @@ img {
 }
 .connect { 
     padding: 25px 0;
-    /* line-height: 20px; */
+    line-height: 30px;
 
 }
 .flexnav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin: 20px auto; */
+    margin: 20px auto;
 
 }
 
@@ -222,7 +225,7 @@ margin-left: 70px;
     height: 300px;
     /* border-radius: 10px; */
     /* width: 1220px; */
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     padding: 20px 0;
     text-align: center;
 }

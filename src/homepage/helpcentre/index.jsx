@@ -35,8 +35,8 @@ const Helpcentre = function () {
     <div>
       <div className={styles.help}>
         <div className={styles.welcome}>
-          <h3>Welcome to AgroLink 👍 </h3>
-          <h1>Help Centre</h1>
+          <h3 data-aos="zoom-in-up" data-aos-delay="600">Welcome to AgroLink 👍 </h3>
+          <h1 data-aos="zoom-in-down" data-aos-delay="600">Help Centre</h1>
         </div>
         <div className={styles.glad}>
           <p>
@@ -46,7 +46,7 @@ const Helpcentre = function () {
           </p>
         </div>
         <div className={styles.selectoption}>
-          <select name="" id="" className={styles.select} >
+          <select name="" id="" className={styles.select} class = "form-select form-select-lg mb-3" aria-label=".form-select-lg example" >
             <option value="" className={styles.option} >All products</option>
 
             {Products.map((product) => (
