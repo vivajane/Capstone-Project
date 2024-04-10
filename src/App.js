@@ -9,9 +9,13 @@ import Producepage from "./producePage"
 import CommunityPage from './communityPage';
 import AccountPage from './accountPage';
 import RewardsPage from './rewardPage';
+import Farmer from './signUp/registerfarmer';
 import SignIn from './signIn';
 import SignUp from './signUp';
 import * as React from "react";
+import ProduceEdit from "./producePage/produceditPage";
+
+import Consumer from './signUp/registerconsumer';
 // import * as ReactDOM from "react-dom/client";
 import {
   createBrowserRouter,
@@ -20,10 +24,12 @@ import {
   Link,
 } from "react-router-dom";
 
+
 function App() {
   useEffect(() => {
     AOS.init();
   }, [])
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -31,7 +37,15 @@ function App() {
     },
     {
       path: "signUp",
-      element: <SignUp />,
+      element: <SignUp/>,
+    },
+    {
+      path: "registerconsumer",
+      element: <Consumer/>,
+    },
+    {
+      path: "registerfarmer",
+      element: <Farmer/>,
     },
     {
       path: "signIn",
@@ -53,6 +67,10 @@ function App() {
     {
       path: "reward",
       element: <RewardsPage />,
+    },
+    {
+      path: "produceditPage",
+      element: <ProduceEdit />,
     },
   ]);
   return (

@@ -2,9 +2,12 @@ import logotwo from "../../images/logo-two.png";
 import logoone from "../../images/logo-one.png";
 import styles from "../../homepage/home.module.css"
 import "../../App";
+import { useNavigate } from "react-router-dom";
+
 const HomePageSection = function(){
+  const navigate = useNavigate();
     return (
-        <div className="container" class="page home" data-aos="fade-down">
+        <div className="container" data-aos="fade-down">
           <div className={styles.section} >
             <div className={styles.para} >
               <p  data-aos="zoom-in-up" data-aos-delay="600">
@@ -17,15 +20,19 @@ const HomePageSection = function(){
               </p>
             </div>
             <nav className={styles.spanbtn}>
-            <div>
-              {/* <Button> */}
-                <a data-aos="zoom-in" data-aos-delay="600" href="/signin?usertype=farmer">Sign in as a Farmer</a>
-              {/* </Button> */}
+            <div className={styles.spanbutton}>
+                <button  onClick={() =>{
+                  localStorage.setItem("userType","farmer")
+                  navigate("/signin")
+                }}  data-aos="zoom-in" data-aos-delay="600">Sign in as a Farmer</button>
             </div>
-            <div>
-              {/* <Button> */}
-                <a data-aos="zoom-in" data-aos-delay="600" href="/signin?usertype=consumer">Sign as a Consumer</a>
-              {/* </Button> */}
+            <div className={styles.spanbutton}>
+                <button onClick={()=> {
+                  localStorage.setItem("userType","consumer") 
+                  navigate("/signin")
+
+
+                }}  data-aos="zoom-in" data-aos-delay="600" >Sign as a Consumer</button>
             </div>
           </nav>
             <div className={styles.fleximage}>

@@ -2,6 +2,7 @@ import Footer from "../component/footer";
 import Header from "../component/header";
 import styles from "../communityPage/pages.module.css";
 import logoseven from "../images/logo-seven.png";
+import { useNavigate } from "react-router-dom";
 const RewardsPage= function () {
   return (
     <div>
@@ -15,6 +16,7 @@ const RewardsPage= function () {
 
 export default RewardsPage;
 const Rewards = function () {
+  const navigate = useNavigate()
   return (
     <div className={styles.communitygen}>
       <div className={styles.community}>
@@ -26,8 +28,22 @@ const Rewards = function () {
             
           </div>
           <div className={styles.btn}>
-            <a href="/signin">Farmer's reward</a>
-            <a href="signin">Consumer's reward</a>
+          <nav className={styles.spanbtn}>
+            <div className={styles.spanbutton}>
+                <button  onClick={() =>{
+                  localStorage.setItem("userType","farmer")
+                  navigate("/signin")
+                }}  data-aos="zoom-in" data-aos-delay="600">Sign in as a Farmer</button>
+            </div>
+            <div className={styles.spanbutton}>
+                <button onClick={()=> {
+                  localStorage.setItem("userType","consumer") 
+                  navigate("/signin")
+
+
+                }}  data-aos="zoom-in" data-aos-delay="600" >Sign as a Consumer</button>
+            </div>
+          </nav>
           </div>
         </div>
         <div className={styles.logofive}>

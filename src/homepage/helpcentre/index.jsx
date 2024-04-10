@@ -40,13 +40,13 @@ const Helpcentre = function () {
         </div>
         <div className={styles.glad}>
           <p>
-            We are glad having you here lokking for answer. As our team hardly
+            We are glad having you here looking for answer. As our team hardly
             working on the products, <br /> feel free to ask any question as we
             believe that honest feedbacks <br /> move us forward.
           </p>
         </div>
         <div className={styles.selectoption}>
-          <select name="" id="" className={styles.select} class = "form-select form-select-lg mb-3" aria-label=".form-select-lg example" >
+          <select name="" id="" className={`${styles.select} form-select form-select-lg mb-3" aria-label=".form-select-lg example`}  >
             <option value="" className={styles.option} >All products</option>
 
             {Products.map((product) => (

@@ -30,7 +30,7 @@ const Menus = [
 ];
 const Header = function () {
   return (
-    <div className={styles.j}>
+    <div>
       <Nav/>
     </div>
   );
@@ -42,7 +42,7 @@ export const Nav = function(){
   return <nav className={styles.nav}>
   <div className={styles.container}>
     <a href="/">
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo"  />
     </a>
     <ul className={styles.list}>
       {Menus.map((menu) => (

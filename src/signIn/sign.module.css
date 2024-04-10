@@ -57,18 +57,14 @@ input{
 }
 .wrap h2 {
 
-    color: black;
+    color:#EBF6EF;
     font-weight: 900;
     font-size: 30px;
-    /* width: 440px; */
-
-
 }
 .wrap p{
     font-size: 16px;
     padding: 10px 0;
-    /* color: #595959; */
-    color: black;
+    color: #EBF6EF;
   
 }
 .formflex p{
@@ -76,23 +72,20 @@ input{
 }
 .btno[variant = "primary"]{
     background-color: #FFE178;
-    padding: 7px;
+    padding: 5px;
     width: 100%;
     border: transparent;
-    margin: 10px auto;
+    margin: 8px auto;
     color: 000000;
     border-radius: 6px;
 }
 .formactiontwo{
     background-color: #EBF6EF;
-    height: 630px;
+    height: 550px;
     padding: 20px;
     width: 400px;
     border-radius: 10px;
     margin: 30px 40px 20px 40px;
-    /* position: fixed;
-    top: 41px;
-    right: 30px; */
 }
 
 .formflextwo{
@@ -111,17 +104,96 @@ input{
 }
 .noaccount{
     color: #595959;
-    /* padding: 10px; */
 }
-/* .noaccount span{
-    padding: 20px auto;
-} */
+
 .noaccount p{
-    padding: 2px 0;
+    /* padding: 2px 0; */
 }
 .noaccount a{
     color: #595959;
     text-decoration: none;
     font-weight: bolder;
-    /* padding: 10px auto; */
+}
+.modal{
+    position: fixed;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalsign{
+    box-shadow: 1px 2px 3px 1px rgba(20,20,20,0.4);
+    padding: 10px ;
+    color: rgba(246, 254, 255, 0.5);
+    text-align: center;
+    z-index: 999999;
+}
+.modalsign button{
+    padding: 10px 10px;
+}
+.consumer{
+    background-color: #EBF6EF;
+    width: 500px;
+    margin: 200px auto;
+    padding: 40px;
+   
+}
+.consumer form input {
+    padding: 8px;
+}
+.consumerheader{
+    text-align: center;
+    padding: 30px;
+  
+}
+
+
+.selected {
+    background-color: rgb(0, 255, 162) !important;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.consumer ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.consumer p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.consumer li{
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    width: 140px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 10px;
+}.consumer button{
+    padding: 10px;
+
+}
+.consumer form label{
+    padding: 10px 0;
+;
+}
+.consumer form{
+    padding: 10px;
+}
+
+.btno[variant = "padded"]{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #FFE178;
+    margin: 80px auto;
+
+}
+.farmerradio{
+    background-color: white;
+    padding: 10px;
 }

@@ -32,7 +32,7 @@
     /* margin-bottom: 30px 0; */
 
 }
-.btn{
+.spanbtn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,23 +42,23 @@
     /* background-color: #FFE178; */
     
 }
-.btn > * {
+.spanbtn > * {
     background-color: #FFE178;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 0;
-    margin-bottom: 60px;
+   
     color: 081B11;
 
 }
-.btn a {
-    color: 081B11;
-    text-decoration: none;
+
+.spanbtn button{
+    border: transparent;
+    background-color: #FFE178;
 }
-.btn a:hover{
-    color: #1d231f;
-    background-color: #07ed57;
+.spanbtn button:hover{
+    color: #07ed57;
 }
+
 .accountcon{
     margin: 120px auto;
     background-color: #F3F3F3;

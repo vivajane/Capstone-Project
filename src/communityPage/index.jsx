@@ -3,6 +3,7 @@ import Header from "../component/header";
 import styles from "../communityPage/pages.module.css";
 import logofive from "../images/logo-five.png";
 import logosix from "../images/logo-six.png";
+import { useNavigate } from "react-router-dom";
 const CommunityPage = function () {
   return (
     <div>
@@ -16,6 +17,7 @@ const CommunityPage = function () {
 export default CommunityPage;
 
 const Community = function () {
+  const navigate = useNavigate();
   return (
     <div className={styles.communitygen}>
       <div className={styles.community}>
@@ -26,8 +28,22 @@ const Community = function () {
             <p>Keep in touch with upcoming events</p>
           </div>
           <div className={styles.btn} data-aos="zoom-in-up" data-aos-delay="600" >
-            <a href="/signin">Sign in as a farmer</a>
-            <a href="signin">Sign in as a consumer</a>
+          <nav className={styles.spanbtn}>
+            <div className={styles.spanbutton}>
+                <button  onClick={() =>{
+                  localStorage.setItem("userType","farmer")
+                  navigate("/signin")
+                }}  data-aos="zoom-in" data-aos-delay="600">Sign in as a Farmer</button>
+            </div>
+            <div className={styles.spanbutton}>
+                <button onClick={()=> {
+                  localStorage.setItem("userType","consumer") 
+                  navigate("/signin")
+
+
+                }}  data-aos="zoom-in" data-aos-delay="600" >Sign as a Consumer</button>
+            </div>
+          </nav>
           </div>
         </div>
         <div className={styles.logofive}>

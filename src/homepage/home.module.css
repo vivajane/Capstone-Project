@@ -7,8 +7,8 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(74, 245, 74, 0.5);
-    z-index: -1;
+    background-color: rgb(124, 184, 124);
+    z-index: 999999;
     padding: 0 40px;
 }
 .nav ul{
@@ -27,7 +27,7 @@ body{
 }
 
 .nav li :hover{
-    background-color: #08F25A;
+    background-color: #9bf1b8;
     padding: 10px;
 }
 .nav a{
@@ -79,19 +79,16 @@ img {
     color: 081B11;
 
 }
-.spanbtn a {
-    color: 081B11;
-    text-decoration: none;
-}
-.spanbtn a:hover{
+
+.spanbutton :hover{
     color: #07ed57;
 }
 .spanbtn button{
-    padding: 10px;
+    padding: 2px auto;
     background-color: #FFE178;
     border: none;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 7px;
+  
 }
 .fleximage{
     display: flex;
@@ -244,7 +241,7 @@ margin-left: 70px;
 }
 .select{
     padding: 10px;
-    width: 50%;
+    width: 100%;
     border-radius: 10px;
 }
 .testimonial{

@@ -5,13 +5,9 @@ import "../App";
 import "../App.css";
 import Header from "../component/header";
 import Footer from "../component/footer";
-import { useForm } from "react-hook-form";
-
+import { useState } from "react";
+import { signInAction } from "../apiRequest/login";
 import { useNavigate } from 'react-router-dom';
-
-
-
-
 
 const SignIn = function () {
   return (
@@ -34,38 +30,57 @@ const SignIn = function () {
   );
 };
 export default SignIn;
-const Form = function () {
-  const { register, handleSubmit } = useForm({
-    shouldUseNativeValidation: true,
-  })
-  const navigate = useNavigate();
-  const onSubmit = async (data) => {
-    console.log(data)
-    if(data.email!== "kosiobuekwe@gmail.com"){
-      alert("Invalid email")
-    } else if ( data.password !== "password"){
-      alert("Invalid password")
-    }
-    else{
-      alert("Login successful")
-      navigate('/produce');
-    }
-  }
 
+
+const Form = function () {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  })
+  const onChangeHandler = (e) => {
+    const{value,name} = e.target
+    setFormData({
+      ...formData,
+      [name] : value,
+    })
+
+  }
+  const navigate = useNavigate();
+ 
+  const onSubmitHandler = async () => {
+    if (formData.email === "") {
+      alert("Invalid email");
+    } else if (formData.password === "") {
+      alert("Invalid password");
+    } else {
+      try {
+        const res = await signInAction(formData);
+        if (res.data.user_type === "farmer") {
+          navigate("/produceditPage");
+        } else {
+          navigate("/produce");
+        }
+      } catch (error) {
+        console.error("Error signing in:", error);                                                                                                                                                                           
+        // Handle error, e.g., display an error message to the user
+      }
+    }
+  };
+  
   return (
-    <form data-aos="zoom-in-up" data-aos-delay="600"  onSubmit={handleSubmit(onSubmit)} className={styles.formaction}>
+    <form onSubmit={ (e) =>{
+      e.preventDefault();
+      onSubmitHandler()
+       // console.log(data)
+    }} data-aos="zoom-in-up" data-aos-delay="600" className={styles.formaction}>
       <h3>Sign-in here</h3>
       <div className={styles.labelone}>
-      <label htmlFor="email" place >Phone Number or Email Address</label>
-      <input {...register("email", {
-          required: "Please enter your first name.",
-        })} id="message" name="email" placeholder="123-4567-890" />
+      <label htmlFor="mail">Email Address</label>
+      <input value={formData?.email} id="mail" name="email" placeholder="123-4567-890" onChange={onChangeHandler} required />
       </div>
       <div className={styles.labelone}>
-      <label htmlFor="password" className={styles.labeltwo}>Password</label>
-      <input {...register("password", {
-          required: "Please enter your first name.",
-        })} type="password" name="password" id="password" placeholder="minimium of 8 characters" />
+      <label htmlFor="pass" className={styles.labeltwo}>Password</label>
+      <input  value={formData?.password}  type="password" name="password" id="pass" placeholder="minimium of 8 characters" onChange={onChangeHandler} required/>
       </div>
       <Button type= "submit" variant="primary">Sign In</Button>
       <div className={styles.noaccount}>
@@ -73,7 +88,7 @@ const Form = function () {
         <span>or</span>
         <p>Sign in with</p>
       </div>
-      <Button  variant="primary" >Google</Button>
+      <Button variant="primary" >Google</Button>
     </form>
   );
-};
+} 

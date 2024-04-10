@@ -33,7 +33,7 @@ const CompanyHelp = [
         text: "FeedBack"
     },
     {
-        id: 2,
+        id: 3,
         link: "eee",
         text: "Responses"
     },
@@ -82,8 +82,8 @@ const Footer = function () {
                   <h2>Company</h2>
                   <ul className={styles.unordered}>
                     {
-                        Company.map((company)=> <div>
-                            <li><a href={company.link}>{company.text}</a></li>
+                        Company.map((company) =><div key={company.id}>
+                            <li ><a href={company.link}>{company.text}</a></li>
                         </div>)
                     }
                   </ul>
@@ -92,7 +92,7 @@ const Footer = function () {
                   <h2>Company</h2>
                   <ul>
                     {
-                        CompanyHelp.map((companyhelp) => <li>
+                        CompanyHelp.map((companyhelp) => <li key={companyhelp.id}>
                             <a href={companyhelp.link}>{companyhelp.text}</a>
                         </li>)
                     }
@@ -102,7 +102,7 @@ const Footer = function () {
                   <h2>Social Media</h2>
                   <ul>
                     {
-                        SocialMedia.map((socialmedia) => <li>
+                        SocialMedia.map((socialmedia) => <li key={socialmedia.id}>
                             <a href={socialmedia.link}>{socialmedia.text}</a>
                         </li>)
                     }

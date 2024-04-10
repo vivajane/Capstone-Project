@@ -1,0 +1,368 @@
+img {
+    height: 20px;
+   margin-right: -100px;
+    
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    height: 100%;
+    position: absolute;
+    
+    
+}
+
+
+.one {
+    width: 18%;
+    background-color: #E9F7ED;
+    border: 1px solid black ;
+}
+
+.unslide {
+    top: 50px;
+    margin-left: 50px;
+    display: flex;
+    gap: 100px;
+    position: relative;
+}
+
+.Detail {
+    border: none;
+}
+
+.slide {
+    position: relative;
+    display: inline-block;
+    gap: 88px;
+    top: 70px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.slidebtncontent {
+    display: none;
+    position: absolute;
+    color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+
+a {
+    color: black;
+    padding: 12px  16px;
+    text-decoration: none;
+    display: block;
+    top: 10px;
+    position: relative;
+}
+
+
+.slide:hover .slidebtncontent {
+    display: block;
+    
+}
+
+.slidebtn {
+    border: none;
+    
+}
+
+.bx-chevron-down{
+    margin-left: 7px;
+    position: relative;
+    
+    
+}
+.transact {
+    border: none;
+
+}
+
+.unslide2 {
+    top: 150px;
+    margin-left: 50px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+
+}
+
+.unslide3 {
+    top: 170px;
+    margin-left: 50px;
+    display: flex;
+    gap: 67px;
+    position: relative;
+
+}
+
+.notice, .help, .logout {
+    border: none;
+}
+
+.unslide4 {
+    top: 185px;
+    margin-left: 50px;
+    display: flex;
+    gap: 112px;
+    position: relative;
+
+}
+
+
+.log{
+    top: 465px;
+    margin-left: 50px;
+    display: flex;
+    gap: 112px;
+    position: relative;
+
+}
+
+
+.two {
+    width: 80%;
+    background-color: white;
+
+}
+
+
+.dropdown2 {
+    margin-left: 60px;
+    display: inline-block;
+    position: relative;
+}
+
+.content-2 {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0;
+}
+
+.dropdown-2:hover .content-2 {
+    display: block;
+}
+
+.btn {
+    border: none;
+    background-color: #E9F7ED;
+    ;
+}
+
+
+.first {
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.flow {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.sum {
+    top: -10px;
+    position: relative;
+}
+
+.icon {
+    display: flex;
+    position: relative;
+    gap: 550px;
+    background-color: white;
+    padding: 10px 20px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+#search {
+    border: none;
+    left: 20px;
+    outline: none;
+
+
+}
+
+.second {
+    display: flex;
+    width: 100%;
+}
+
+
+
+.tomatoes {
+    margin-top: 20px;
+    width: 400px;
+    padding: 10px 15px;
+    
+}
+
+h4{
+    display: block;
+    margin-top: 5px;
+    top: 15px;
+    position: relative;
+}
+
+.coke {
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 40%;
+    background-color: white;
+
+}
+
+
+#amount {
+    margin-top: 20px;
+    width: 400px;
+    padding: 10px 15px;
+}
+
+.descr {
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+    padding: 10px 15px;
+    
+
+}
+
+.fanta {
+    width: 40%;
+    background-color: white;
+
+}
+
+.cover {
+    display: flex;
+    ;
+}
+
+.pics {
+    height: 200px;
+    width: 200px;
+    top: 50px;
+    display: block;
+}
+
+.pics:hover {
+    border: 2px solid blue;
+}
+
+
+.yam {
+    height: 190px;
+    width: 200px;
+    border: 1px solid black;
+    left: 110px;
+    top: 30px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.click {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.add-pro {
+    display: block;
+    margin-top: 5px;
+    top: 3px;
+    position: relative;
+
+}
+
+.wrap {
+    display: flex;
+    gap: 15px;
+    top: 50px;
+    position: relative;
+}
+
+.money {
+    display: flex;
+    border: 1px solid black;
+    width: 110px;
+    position: relative;
+}
+
+#dolla {
+    border: none;
+    outline: none;
+    width: 90px;
+    position: relative;
+}
+
+.second-cover {
+    top: 15px;
+    position: relative;
+}
+
+.same {
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+}
+
+#discount {
+    width: 115px;
+    height: 25px;
+    border: 1px solid black;
+    padding: 5px;
+    right: 40px;
+    position: relative;
+    
+}
+
+#quantity {
+    width: 115px;
+    height: 25px;
+    top: 70px;
+    border: 1px solid black;
+    left: 40px;
+    position: relative;
+    
+
+}
+
+.Avalaible {
+    top: 67px;
+    position: relative;
+    left: 40px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: last baseline;
+    align-items: last baseline;
+    position: relative;
+    gap: 60px;
+    top: 150px;
+    left: 48px;
+}
+
+.btnbtn {
+    background-color: #FFE178;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
