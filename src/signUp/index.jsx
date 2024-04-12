@@ -3,10 +3,10 @@ import styles from "../signIn/sign.module.css";
 import Header from "../component/header";
 import Footer from "../component/footer";
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { signUpAction } from "../apiRequest/signup";
 
-import ModalSign from "./modal";
+import SignUpModal from "./modal";
 
 const SignUp = function () {
  
@@ -37,7 +37,6 @@ const SignUp = function () {
 };
 export default SignUp;
 
-
 const Form = function () {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState(
@@ -57,12 +56,7 @@ const Form = function () {
   }
 
  
-  // const navigate = useNavigate();
-
-  // const onSubmit = async (data) => {
-  //   navigate("/")
-
-  // }
+  const navigate = useNavigate();
   const onSubmitHandler = async () => {
    try{
     console.log("signing up")
@@ -73,22 +67,39 @@ const Form = function () {
     }
     
     const response = await signUpAction(payLoad);
-    console.log(response.data.user_id)
-    if(response.data.user_id != null){
-      localStorage.setItem("key",JSON.stringify(response.data))
-      // if(response.data.user_type === "consumer"){
-      //   navigate("/registerconsumer")
-      // } else{ navigate("/registerfarmer")}
-      // console.log(" I am the if statement")
-      setShowModal(true)
+    console.log(response, "halooooooo")
+    const actualResponse = response?.data;
+    console.log(actualResponse, "this is the actual ")
 
+    if(actualResponse.user_id != null){
+      console.log(actualResponse.user_id, "this ia all");
+      const customerId = actualResponse.user_id;
+
+      localStorage.setItem("customers_id", customerId);
+      setShowModal(true)
+      
+      
+
+    } else{
+      console.log("hello response", response);
     }
-    console.log("hello response", response);
+    
    } catch{
     console.log("this is the error")
    }
     // navigate("/");
   };
+
+  const closeModal = () => {
+    const userType = localStorage.getItem("userType") ;
+    setShowModal (false)
+    if(userType === "farmer"){
+      navigate("/registerfarmer")
+
+    } else if (userType === "consumer"){
+      navigate("/registerconsumer")
+    }
+  }
   return (
     <>
     <form
@@ -150,7 +161,7 @@ const Form = function () {
       </div>
       <Button variant="primary" >Google</Button>
     </form>
-    {showModal === true? < ModalSign setShowModal={setShowModal}  /> : null } 
+    {showModal === true? < SignUpModal setShowModal={ closeModal}  /> : null } 
 
     </>
   );

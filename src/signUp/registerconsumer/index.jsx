@@ -44,18 +44,27 @@ const Consumer = () => {
     });
   };
   const navigate = useNavigate();
+  const id = () =>{
+    const local = localStorage.getItem("customers_id")
+    return local
+  }
+  
+
+ const customers_id = id()
 
   const onSubmitHandler = async () => {
     if (selectedItems.length >= 3) {
+      const categoriesString = selectedItems.join(',');
+
+      const payloadData = {
+        categories: categoriesString,
+        ...inputValue,
+        customers_id : customers_id
+      };
+      console.log(payloadData)
       try {
-        const payloadData = {
-          categories: selectedItems,
-          ...inputValue,
-        };
-        console.log(payloadData)
-        
         const response = await consumerResponse(payloadData);
-        navigate("/produce")
+        navigate("/");
         console.log(response, "this is the response");
        
       } catch (error) {

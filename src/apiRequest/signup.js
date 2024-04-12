@@ -22,9 +22,16 @@
 
 
 import axios from "axios";
+// export const signUpAction = async (data) => {
+//       return await axios.post(
+//         "https://agrolink.onrender.com/register",
+//         data
+//       );
+//   };
 export const signUpAction = async (data) => {
-      return await axios.post(
-        "https://agrolink.onrender.com/register",
-        data
-      );
-  };
+  const response = await axios.post(
+      "https://agrolink.onrender.com/register",
+      data
+  );
+  return response;
+};

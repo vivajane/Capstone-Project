@@ -48,22 +48,29 @@ const Form = function () {
   const navigate = useNavigate();
  
   const onSubmitHandler = async () => {
-    if (formData.email === "") {
-      alert("Invalid email");
-    } else if (formData.password === "") {
-      alert("Invalid password");
-    } else {
-      try {
-        const res = await signInAction(formData);
-        if (res.data.user_type === "farmer") {
-          navigate("/produceditPage");
-        } else {
-          navigate("/produce");
-        }
-      } catch (error) {
-        console.error("Error signing in:", error);                                                                                                                                                                           
-        // Handle error, e.g., display an error message to the user
+    // if (formData.email === "") {
+    //   alert("Invalid email");
+    //   return;
+    // }
+  
+    // if (formData.password === "") {
+    //   alert("Invalid password");
+    //   return;
+    // }
+  
+    try {
+      const res = await signInAction(formData);
+      const userForm = res?.data;
+      console.log(res, "from the signin")
+      console.log(userForm, "from the userform")
+      if (userForm?.user_type === "farmer") {
+        navigate("/produceditPage");
+      } else {
+        navigate("/produce");
       }
+    } catch (error) {
+      console.error("Error signing in:", error);
+  
     }
   };
   
