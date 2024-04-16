@@ -1,157 +1,152 @@
-// import styles from "./producedit.module.css";
-// import { SlArrowDown } from "react-icons/sl";
-// import logoimage from "../../produceimage/yam.png";
-// // import { SlArrowUp } from "react-icons/sl";
+import styles from "./producedit.module.css";
+import logoimage from "../../produceimage/yam.png";
 // import { SlLogout } from "react-icons/sl";
-// import { SlPicture } from "react-icons/sl";
-// import { SlMagnifier } from "react-icons/sl";
-// import Header from "../../component/header";
-// import Footer from "../../component/footer";
+import { SlPicture } from "react-icons/sl";
+import { SlMagnifier } from "react-icons/sl";
+// import { BiChevronDown } from "react-icons/bi";
+import Header from "../../component/header";
+import Footer from "../../component/footer";
+import ProduceComponent from "../producecomponent";
+import "../../App";
+import Button from "../../homepage/button/button";
 
-const ProduceEdit = function () {
-  return <div>This is the produce edit page</div>
-//   return (
-//     <div>
-//       <Header />
-//       <div className={styles.container}>
-//         <div className={styles.container}>
-//           <div className={styles.one}>
-//             <div className={styles.unslide}>
-//               <button className={styles.Detail}>Details</button>
-//               <SlArrowDown />
-//             </div>
 
-//             <div className={styles.slide}>
-//               <button className={styles.slidebtn}>My Shop</button>
-//               <SlArrowDown />
-//               <div className={styles.slidebtncontent}>
-//                 <a href="/">My Orders</a>
-//                 <a href="/">Product upload</a>
-//               </div>
-//             </div>
-//             <div className={styles.unslide2}>
-//               <button className={styles.transact}>My Transaction</button>
-//               <SlArrowDown />
-//             </div>
-//             <div className={styles.unslide3}>
-//               <button className={styles.notice}>Notifications</button>
-//               <SlArrowDown />
-//             </div>
-//             <div className={styles.unslide4}>
-//               <button className={styles.help}>Help</button>
-//               <SlArrowDown />
-//             </div>
-//             <div className={styles.log}>
-//               <button className={styles.logout}>Log Out</button>
-//               <SlLogout />
-//             </div>
-//           </div>
-//           <div className={styles.two}>
-//             <div className={styles.first}>
-//               <h2>Edit Product</h2>
-//               <br />
-//               <p>
-//                 The most important feature of this section is adding the
-//                 products.When adding the products fill in the
-//               </p>
-//               <p>
-//                 required fields and follow the rules of uploading your products
-//               </p>
-//               <div className={styles.flow}>
-//                 <p className={styles.sum}>Overview</p>
-//                 <p className="sum">Add Product</p>
-//               </div>
-//               <form action="/search" method="GET">
-//                 <div className={styles.icon}>
-//                   <input
-//                     type="text"
-//                     name="query"
-//                     placeholder="search for order ID, product"
-//                     id="search"
-//                   />
-//                   <SlMagnifier />
-//                 </div>
-//               </form>
-//             </div>
-//             <div className={styles.second}>
-//               <div className={styles.coke}>
-//                 <h4>Product</h4>
-//                 <form action="" className={styles.product}>
-//                   <input
-//                     className={styles.tomatoes}
-//                     type="text"
-//                     placeholder="fruit tomatoes"
-//                   />
-//                   <p>do not exceed 20 characters when entering product name</p>
-
-//                   <h4>Category</h4>
-//                   <input
-//                     type="text"
-//                     placeholder="vegetables"
-//                     className={styles.tomatoes}
-//                   />
-
-//                   <h4>Size</h4>
-//                   <select name="sizes" id="amount">
-//                     <option value="v">extra large</option>
-//                     <option value="v">small</option>
-//                     <option value="v">large</option>
-//                   </select>
-
-//                   <h4>Description</h4>
-//                   <input type="text" className={styles.descr} />
-//                 </form>
-//               </div>
-//               <div className={styles.fanta}>
-//                 <div className={styles.cover}>
-//                   <div className={styles.pictures}>
-//                     <h4 className={styles.addpro}>Add Products</h4>
-//                     <img src={logoimage} alt="" className={styles.pics} />
-//                   </div>
-//                   <div className={styles.yam}>
-//                     <SlPicture />
-//                     <p>drop your images or select</p>
-//                     <a href="/" className={styles.click}>
-//                       click to browse
-//                     </a>
-//                   </div>
-//                 </div>
-//                 <div className={styles.secondcover}>
-//                   <div className={styles.wrap}>
-//                     <h6 className={styles.same}>price</h6>
-//                     <div className={styles.money}>
-//                       <i class="bx bxs-dollar-circle"></i>
-//                       <form action="">
-//                         <input type="text" placeholder="5000" id="dolla" />
-//                       </form>
-//                     </div>
-
-//                     <h6 className={styles.same}>Discount (optional)</h6>
-//                     <div className={styles.mo}>
-//                       <form action="">
-//                         <input type="text" placeholder="20%" id="discount" />
-//                       </form>
-//                     </div>
-//                   </div>
-//                   <h6 className={styles.Avalaible}>Quantity Avalaible</h6>
-//                   <div className={styles.Lastone}>
-//                     <form>
-//                       <input type="text" placeholder="" id="quantity" />
-//                     </form>
-//                   </div>
-//                 </div>
-//                 <div className={styles.buttons}>
-//                   <button className={styles.btnbtn}>Add Product</button>
-//                   <button className={styles.btnbtn}>Save Product</button>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <Footer />
-//     </div>
-//   );
+const ProduceEdit = () => {
+  return (
+    <div>
+      <Header />
+      <Section />
+      <Footer />
+    </div>
+  );
 };
 
 export default ProduceEdit;
+
+const Section = () => {
+  return (
+    <div className="containe">
+      <section className={styles.productsection}>
+        <ProduceComponent />
+        <div className={styles.editproduct}>
+          <div>
+            <h2 style={{fontWeight: "800"}}>Edit Product</h2>
+            <p>
+              The most important feature of this section is adding the products.
+              When adding the products,fill in the <br /> required fields and follow
+              the rules for uploading your products
+            </p>
+          </div>
+          <div className={styles.overview}>
+            <a href="/">Overview</a>
+            <a href="/addproducts">Add Product</a>
+          </div>
+          <hr />
+          <form className={styles.formproduct}>
+            <div>
+              <div className={styles.searchflex}>
+                <input
+                  type="search"
+                  name=""
+                  id=""
+                  placeholder="search for order ID, product number, customer or something"
+                />
+                <SlMagnifier className={styles.magnifier} />
+              </div>
+              <div className={styles.formflex}>
+                <div>
+                  <div>
+                    <label htmlFor="productname">Product Name</label>
+                    <input
+                      type="text"
+                      name="productname"
+                      id="productname"
+                      placeholder="Tomatoes"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="category">Category</label>
+                    <input
+                      type="text"
+                      name="category"
+                      id="category"
+                      placeholder="Vegetable"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="">Size</label>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Extra large"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="">Description</label>
+                    <textarea name="" id="" cols="40" rows="15"></textarea>
+                  </div>
+                </div>
+               
+                <div>
+                  <h3 style={{fontWeight: "800"}}>Add Product</h3>
+                  <div className={styles.img}>
+                    <div>
+                      <img src={logoimage} alt="yam" />
+                    </div>
+                    <div className={styles.picture}>
+                      img
+                      <SlPicture className={styles.pic} />
+                    </div>
+                  </div>
+                  <div>
+                    <p>
+                      Add atleast two images, please upload qualities images.
+                      Pictures must fit the frame.
+                    </p>
+                  </div>
+                  <div className={styles.price}>
+                    <div>
+                      <label htmlFor="price">Price</label>
+                      <input
+                        type="text"
+                        name="price"
+                        id="price"
+                        placeholder="$200"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="discount">Discount(optional)</label>
+                      <input
+                        type="text"
+                        name="discount"
+                        id="discount"
+                        placeholder="20%"
+                      />
+                    </div>
+                  </div>
+                  <div className={styles.quality}>
+                    <label htmlFor="quality">Quality available</label>
+                    <input type="text" name="quality" id="quality" />
+                  </div>
+                  <div className={styles.btnflex}>
+                  <div >
+                  <Button variant="secondary" >Add Product</Button>
+                  </div>
+                  <div>
+                  <Button variant="secondary" >Save Product</Button>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+               <div>
+                  <Button variant="secondary" >Become a Consumer</Button>
+                  </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  );
+};

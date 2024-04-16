@@ -13,8 +13,8 @@
    overflow: hidden;
    margin-top: 72px;
    background-repeat: no-repeat;
-   background-image: url("https://images.pexels.com/photos/2893525/pexels-photo-2893525.jpeg?auto=compress&cs=tinysrgb&w=600");
-   background: linear-gradient(rgba(34, 243, 94, 0.5), rgba(3, 11, 4, 0.5)), url("https://images.pexels.com/photos/2893525/pexels-photo-2893525.jpeg?auto=compress&cs=tinysrgb&w=600");
+   background-image: url("https://images.pexels.com/photos/196643/pexels-photo-196643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+   /* background: linear-gradient(rgba(34, 243, 94, 0.5), rgba(3, 11, 4, 0.5)), url("https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=600"); */
    background-size: cover;
    background-position: center;
    /* background-color: hsl(0, 48%, 76%); */
@@ -43,6 +43,9 @@ input{
 .labelone{
     /* margin: 1px auto; */
     padding: 4px 0;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
     
 }
 
@@ -54,17 +57,20 @@ input{
 .wrap{
     margin: 40px ;
     padding: 100px 0;
+    
 }
 .wrap h2 {
 
-    color:#EBF6EF;
+ 
     font-weight: 900;
     font-size: 30px;
+    color: white;
 }
 .wrap p{
     font-size: 16px;
     padding: 10px 0;
-    color: #EBF6EF;
+    color: black;
+    color: white;
   
 }
 .formflex p{
@@ -80,12 +86,13 @@ input{
     border-radius: 6px;
 }
 .formactiontwo{
-    background-color: #EBF6EF;
+    background-color: #f1f7e7;
     height: 550px;
     padding: 20px;
     width: 400px;
     border-radius: 10px;
     margin: 30px 40px 20px 40px;
+    
 }
 
 .formflextwo{
@@ -96,8 +103,8 @@ input{
     margin-top: 70px;
     padding: 10px 0;
     height: 700px;
-    background-image: url(https://images.pexels.com/photos/5231012/pexels-photo-5231012.jpeg?auto=compress&cs=tinysrgb&w=600);
-    background: linear-gradient(rgb(39, 66, 39), rgba(35, 234, 55, 0.5)), url(https://images.pexels.com/photos/5231012/pexels-photo-5231012.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-image: url("https://images.pexels.com/photos/257794/pexels-photo-257794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background: linear-gradient(rgb(39, 66, 39), rgba(35, 234, 55, 0.5)), url(https://images.pexels.com/photos/5231012/pexels-photo-5231012.jpeg?auto=compress&cs=tinysrgb&w=600); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

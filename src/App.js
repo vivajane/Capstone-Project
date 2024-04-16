@@ -14,6 +14,11 @@ import SignIn from './signIn';
 import SignUp from './signUp';
 import * as React from "react";
 import ProduceEdit from "./producePage/produceditPage";
+import ProduceEditSub from "./producePage/produceditsub";
+import ProduceCart from './producePage/producecart';
+import ProduceComponent from './producePage/producecomponent';
+import ProduceOverview from './producePage/produceoverview';
+import MyCart from './producePage/mycart';
 
 import Consumer from './signUp/registerconsumer';
 // import * as ReactDOM from "react-dom/client";
@@ -23,6 +28,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+
 
 
 function App() {
@@ -71,6 +77,26 @@ function App() {
     {
       path: "produceditPage",
       element: <ProduceEdit />,
+    },
+    {
+      path: "produceoverview",
+      element: <ProduceOverview/>,
+    },
+    {
+      path: "produceditsub",
+      element: <ProduceEditSub />,
+    },
+    {
+      path: "producecart",
+      element: <ProduceCart />,
+    },
+    {
+      path: "producecomponent",
+      element: <ProduceComponent />,
+    },
+    {
+      path: "mycart",
+      element: <MyCart />,
     },
   ]);
   return (

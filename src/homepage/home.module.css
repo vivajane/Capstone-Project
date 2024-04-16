@@ -7,7 +7,7 @@ body{
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgb(124, 184, 124);
+    background-color: rgb(101, 211, 101);
     z-index: 999999;
     padding: 0 40px;
 }
@@ -27,7 +27,7 @@ body{
 }
 
 .nav li :hover{
-    background-color: #9bf1b8;
+    background-color: #239248;
     padding: 10px;
 }
 .nav a{

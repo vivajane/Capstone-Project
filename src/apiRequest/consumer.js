@@ -5,7 +5,9 @@ export const consumerResponse = async (payloadData) => {
       "https://agrolink.onrender.com/consData/",
       payloadData
     );
+    return response;
     console.log("Response:", response.data);
+
     // Handle successful response here
   } catch (error) {
     console.error("Error:", error);

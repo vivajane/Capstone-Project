@@ -48,15 +48,7 @@ const Form = function () {
   const navigate = useNavigate();
  
   const onSubmitHandler = async () => {
-    // if (formData.email === "") {
-    //   alert("Invalid email");
-    //   return;
-    // }
-  
-    // if (formData.password === "") {
-    //   alert("Invalid password");
-    //   return;
-    // }
+   
   
     try {
       const res = await signInAction(formData);
@@ -83,7 +75,7 @@ const Form = function () {
       <h3>Sign-in here</h3>
       <div className={styles.labelone}>
       <label htmlFor="mail">Email Address</label>
-      <input value={formData?.email} id="mail" name="email" placeholder="123-4567-890" onChange={onChangeHandler} required />
+      <input value={formData?.email} id="mail" name="email" placeholder="vivian@gmail.com" onChange={onChangeHandler} required />
       </div>
       <div className={styles.labelone}>
       <label htmlFor="pass" className={styles.labeltwo}>Password</label>

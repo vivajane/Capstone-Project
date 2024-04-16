@@ -1,5 +1,5 @@
 import Header from "../component/header";
-// import "../App.css";
+import "../App.css";
 import Footer from "../component/footer";
 import styles from "./produce.module.css";
 import ProduceSub from "./producesub";
@@ -110,16 +110,16 @@ const Product = function () {
                 <button  onClick={() =>{
                   localStorage.setItem("userType","farmer")
                   navigate("/signin")
-                }}  data-aos="zoom-in" data-aos-delay="600">Sign in as a Farmer</button>
+                }}  data-aos="zoom-in" data-aos-delay="600">Become a Farmer</button>
             </div>
-            <div className={styles.spanbutton}>
+            {/* <div className={styles.spanbutton}>
                 <button onClick={()=> {
                   localStorage.setItem("userType","consumer") 
                   navigate("/signin")
 
 
                 }}  data-aos="zoom-in" data-aos-delay="600" >Sign as a Consumer</button>
-            </div>
+            </div> */}
           </nav>
         </div>
         <div>

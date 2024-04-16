@@ -131,7 +131,7 @@ const Form = function () {
           name="email"
           id="mail"
           value={data?.email}
-          placeholder="minimium of 8 characters"
+          placeholder="vivian@gmail.com"
         />
       </div>
       <div className={styles.labelone}>
@@ -145,11 +145,13 @@ const Form = function () {
           placeholder="minimium of 8 characters"
         />
       </div>
-      <div className={styles.labelone}>
-        <input type="checkbox" name="checkbox" id="check" />
-        <label htmlFor="check">
-          I agree to the terms and conditions of AgroLink
+      <div className = "form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck"/>
+        <label class="form-check-label" for="dropdownCheck">
+        I agree to the terms and conditions
+         
         </label>
+
       </div>
       <Button variant="primary" type="submit">Sign Up</Button>
       <div className={styles.noaccount}>
