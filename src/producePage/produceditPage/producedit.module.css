@@ -94,8 +94,16 @@ a{
 
     gap: 15px;
 }
+.overview :hover{
+    text-decoration: underline;
+}
 .formproduct{
+    /* height: 1400px; */
     
+}
+
+.bcome{
+    margin-top: 50px;
 }
 .formproduct input{
     border: 1px solid black;
@@ -125,11 +133,10 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.picture{
-    border: 1px solid black;
+.input{
     position: relative;
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 100px; */
     margin: 0 15px;
 }
 .pic{
@@ -153,7 +160,7 @@ a{
     /* justify-content: space-between; */
     align-items: center;
     padding: 40px 0;
-    margin: 20px 0;
+    /* margin: 10px 0; */
     gap: 15px;
 }
 label{
@@ -171,8 +178,8 @@ button[variant = "cartt"]{
 .editproductt{
    
     margin: 10px auto;
-    width: 12000px;
-    height: 1100px ;
+    width: 900px;
+    /* height: 900px ; */
     margin: 90px 0;
     padding: 30px;
 
@@ -188,11 +195,10 @@ button[variant = "cartt"]{
     gap: 40px;
     padding: 20px 0;
     
- 
 }
 .imgflexxx > * {
     /* padding: 10px 0; */
-    height: 400px;
+    /* height: 400px; */
   
 }
 .imgflexxx :nth-child(1){
@@ -260,6 +266,7 @@ button[variant = "cartt"]{
     padding: 20px 0;
     width: 1100px;
    
+   
  
 }
 .tubers{
@@ -316,5 +323,10 @@ button[variant = "cartt"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.fish img{
+    height: 300px;
+    width: 400px;
 }
 

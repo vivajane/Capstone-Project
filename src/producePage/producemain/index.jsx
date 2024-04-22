@@ -1,6 +1,8 @@
 import star from "../../produceimage/star.png";
 import styles from "../produce.module.css";
 import Button from "../../homepage/button/button";
+import { allProduct } from "../../apiRequest/allproduct";
+import { useEffect, useState } from "react";
 const Popularitems = [
   {
     id: 1,
@@ -74,41 +76,74 @@ const Popularitems = [
   },
 ];
 const Producetwo = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const res = await allProduct();
+        console.log(res.data)
+        // const result = await res;
+        setProducts(res.data.data);
+        // console.log(result);
+      } catch (error) {
+        console.log(error, "error");
+      }
+    };
+
+    getProduct();
+  }, []);
+  console.log(Popularitems, "hello");
+
   return (
     <div>
       <ul className={styles.popular}>
-        {Popularitems.map((popularitem) => (
-          <li key={popularitem.id} className={styles.li} data-aos="zoom-in-up" data-aos-delay="600">
-            <img src={popularitem.star} alt="hfhf" /> <br />
-            <strong>{popularitem.item} </strong>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
+        {Popularitems &&
+          Popularitems?.map((product) => (
+            <li
+              key={product.id}
+              className={styles.li}
+              data-aos="zoom-in-up"
+              data-aos-delay="600"
             >
-              <div>
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
-                <img src={star} alt="star" />
+              <a href={`/producecartdetail?id=${product.id}`}>
+                <img src={product.star} alt="images" /> <br />
+              </a>
+              <strong>{product.item} </strong>
+
+
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <div>
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                  <img src={star} alt="star" />
+                </div>
+                <div>-4.0</div>
               </div>
-              <div>-4.0</div>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <div>{popularitem.price}</div>
-              <div><Button variant="cart" >Add to Cart</Button></div>
-            </div>
-          </li>
-        ))}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                }}
+              >
+                <div>{product.price}</div>
+                <div>
+                  <Button variant="cart" type="submit">
+                    Add to Cart
+                  </Button>
+                </div>
+              </div>
+              
+            </li>
+          ))}
       </ul>
     </div>
   );

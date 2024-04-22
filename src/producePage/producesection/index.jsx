@@ -5,27 +5,13 @@ import Button from "../../homepage/button/button";
 const ProduceSection = function () {
   return (
     <div className={styles.editproductt}>
-      <div>
-        <h2 style={{ fontWeight: "800" }}>Edit Product</h2>
-        <p>
-          The most important feature of this section is adding the products.
-          When adding the products,fill in the <br /> required fields and follow
-          the rules for uploading your products
-        </p>
-      </div>
-      <div className={styles.overview}>
-        <a href="/">Overview</a>
-        <a href="/addproducts">Add Product</a>
-      </div>
-      <hr />
+     
       <div className={styles.tubersflex}>
         <div className={styles.imgflexxx}>
           <div>
             <img src={logoimage} alt="img" />
           </div>
-          <div>
-            <img src={logoimage} alt="img" />
-          </div>
+          
         </div>
         <div>
           <div>

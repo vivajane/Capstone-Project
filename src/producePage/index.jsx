@@ -6,53 +6,64 @@ import ProduceSub from "./producesub";
 import hand from "../produceimage/handshake.png";
 import Producetwo from "./producemain";
 import { useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { getCategory } from "../apiRequest/allcategories";
 
 
 const ProductCategories = [
   {
     id: 1,
+    link: "/vegetables",
     item: "Vegetables",
     imagesrc: "../produceimage/vegetables.png",
-    alt: "imagetwo",
+   
   },
   {
     id: 2,
     item: "Grains",
+    link: "/grains",
     imagesrc: "../produceimage/Grains.png",
   },
   {
     id: 3,
     item: "fruits",
+    link: "/fruits",
     imagesrc: "../produceimage/fruit.png",
   },
   {
     id: 4,
     item: "Seeds",
+    link: "/seeds",
     imagesrc: "../produceimage/seed.png",
   },
   {
     id: 5,
     item: "Flowers",
+    link: "/flowers",
     imagesrc: "../produceimage/Flowers.png",
   },
   {
     id: 6,
     item: "Livestock",
+    link: "/livestock",
     imagesrc: "../produceimage/Livestock.png",
   },
   {
     id: 7,
     item: "Poultry",
+    link: "/poultry",
     imagesrc: "../produceimage/poulty.png",
   },
   {
     id: 8,
     item: "Meat",
+    link: "/meat",
     imagesrc: "../produceimage/Meat.png",
   },
   {
     id: 9,
     item: "Fish",
+    link: "/fish",
     imagesrc: "../produceimage/Fish.png",
   },
 ];
@@ -60,11 +71,12 @@ const ProductCategories = [
 
 
 const Producepage = function () {
+  
 
   return (
     <div className="container">
       <Header />
-      <Product />
+      <Product  />
       <Footer />
     </div>
   );
@@ -73,6 +85,24 @@ const Producepage = function () {
 export default Producepage;
 
 const Product = function () {
+
+  const[categories, setCategories] = useState([]);
+  useEffect(() =>{
+    const fetchCategories = async () => {
+      try{
+        const res = await getCategory()
+        console.log(res.data)
+      // const result = await res()
+      setCategories(res.data)
+      // console.log(result)
+
+      }catch(error){
+        console.log(error, "this is the error")
+      }
+    }
+    
+    fetchCategories()
+  }, [])
   const navigate = useNavigate()
   return (
     <div className={styles.product}>
@@ -80,10 +110,11 @@ const Product = function () {
       <div className={styles.producelistcontainer}>
         <h3>Categories</h3>
         <ul className={styles.producelist}>
-          {ProductCategories.map((product) => (
-            <li key={product.id} data-aos="flip-up" data-aos-delay="600">
-              <img src={product.imagesrc} alt={product.alt} /> <br />
-              <strong> {product.item}</strong>
+
+          {ProductCategories != null && ProductCategories?.map((category) => (
+            <li key={category.id} data-aos="flip-up" data-aos-delay="600">
+              <img src={category.imagesrc} alt={category.alt} /> <br />
+              <strong> <a href={category.link}>{category.item}</a></strong>
             </li>
           ))}
         </ul>

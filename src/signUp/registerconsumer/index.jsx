@@ -20,7 +20,7 @@ const Items = [
 ];
 
 const Consumer = () => {
-  const [selectedItems, setSelectedItems] = useState("");
+  const [selectedItems, setSelectedItems] = useState([]);
   const [inputValue, setInputValue] = useState({
     mailing_add: "",
     city: "",

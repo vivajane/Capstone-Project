@@ -19,6 +19,11 @@ import ProduceCart from './producePage/producecart';
 import ProduceComponent from './producePage/producecomponent';
 import ProduceOverview from './producePage/produceoverview';
 import MyCart from './producePage/mycart';
+import ProduceCartCatFish from "./producePage/producecart/producecartcatfish"
+import ProduceCartChicken from "./producePage/producecart/producecartchicken"
+import ProduceCartDetail from "./producePage/producedetail"
+import AddProducts from './producePage/addproducts/addproducts';
+import ProduceSection from './producePage/producesection';
 
 import Consumer from './signUp/registerconsumer';
 // import * as ReactDOM from "react-dom/client";
@@ -61,6 +66,18 @@ function App() {
       path: "produce",
       element: <Producepage />,
     },
+    {
+      path: "producecartcatfish",
+      element: <ProduceCartCatFish />,
+    },
+    {
+      path: "producecartdetail",
+      element: <ProduceCartDetail />,
+    },
+    {
+      path: "producecartchicken",
+      element: <ProduceCartChicken />,
+    },
   
     {
       path: "community",
@@ -77,6 +94,19 @@ function App() {
     {
       path: "produceditPage",
       element: <ProduceEdit />,
+      children : [
+        {
+          path: "addproducts",
+          element: <AddProducts />,
+        },
+      
+      
+        {
+          path: "producesection",
+          element: <ProduceSection/>,
+        },
+
+      ]
     },
     {
       path: "produceoverview",
