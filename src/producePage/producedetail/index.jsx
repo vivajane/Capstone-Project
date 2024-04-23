@@ -10,6 +10,7 @@ import Button from "../../homepage/button/button";
 import ProduceMini from "../producemini";
 import { useSearchParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const ProduceDetail = function () {
   return (
@@ -61,6 +62,7 @@ export const Produce = function () {
       star: "../produceimage/carrot.png",
       text: "-4.0",
       price: 1000,
+      quantity: 10,
     },
     {
       id: 5,
@@ -110,6 +112,23 @@ export const Produce = function () {
   console.log(Produce, "produce");
 
   const navigate = useNavigate()
+
+  const[quantity, setQuantity] = useState(0)
+
+  const increaseQuantity = () => {
+    setQuantity(quantity + 1)
+    console.log(quantity)
+
+  }
+  const decreaseQuantity = () => {
+    if(quantity > 0){
+      setQuantity(quantity - 1)
+    console.log(quantity)
+
+    }
+    
+
+  }
 
   const onClickHandler = () => {
     navigate("/mycart")
@@ -165,13 +184,13 @@ export const Produce = function () {
                   <h4 style={{ padding: "10px 0" }}>Quantity</h4>
                   <div className={styles.btnp}>
                     <div className={styles.pb}>
-                      <button>-</button>
-                      <p>0</p>
-                      <button>+</button>
+                      <button onClick={decreaseQuantity}>-</button>
+                      <p>{quantity}</p>
+                      <button onClick={increaseQuantity}>+</button>
                     </div>
                     <div>
                       <p>
-                        12 items left! <br /> don't miss it!
+                        {Produce.quantity} items left! <br /> don't miss it!
                       </p>
                     </div>
                   </div>

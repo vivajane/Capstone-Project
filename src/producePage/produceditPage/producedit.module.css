@@ -317,6 +317,12 @@ button[variant = "cartt"]{
     align-items: center;
     border-radius: 6px;
     color: green;
+    
+}
+.pp button{
+    border: transparent;
+    
+
 }
 
 .mycart{
@@ -328,5 +334,12 @@ button[variant = "cartt"]{
 .fish img{
     height: 300px;
     width: 400px;
+}
+button[variant= "checkout"]{
+    width: 150px;
+    padding: 10px;
+    background-color: #FFE178;
+    border: transparent;
+   
 }
 

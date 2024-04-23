@@ -52,12 +52,13 @@ const Form = function () {
   
     try {
       const res = await signInAction(formData);
-      const userForm = res?.data;
+      const userForm = res?.data.message[0];
       console.log(res, "from the signin")
       console.log(userForm, "from the userform")
+      console.log(userForm.user_type, "ident")
       if (userForm?.user_type === "farmer") {
         navigate("/produceditPage");
-      } else {
+      } if(userForm?.user_type === "consumer"){
         navigate("/produce");
       }
     } catch (error) {

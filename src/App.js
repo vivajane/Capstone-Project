@@ -12,6 +12,7 @@ import RewardsPage from './rewardPage';
 import Farmer from './signUp/registerfarmer';
 import SignIn from './signIn';
 import SignUp from './signUp';
+import Privacy from './privacy/privacy';
 import * as React from "react";
 import ProduceEdit from "./producePage/produceditPage";
 import ProduceEditSub from "./producePage/produceditsub";
@@ -49,6 +50,12 @@ function App() {
     {
       path: "signUp",
       element: <SignUp/>,
+      
+    },
+    {
+      path: "privacy",
+      element: <Privacy/>
+
     },
     {
       path: "registerconsumer",

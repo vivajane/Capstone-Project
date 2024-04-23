@@ -1,0 +1,59 @@
+.containers{
+    margin: 120px auto;
+
+    width: 1000px;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 140px;
+   
+    padding: 20px 0;
+}
+.main{
+    padding: 20px 0;
+
+
+}
+.nav{
+    background-color: #E6F9E5;
+    padding: 20px;
+
+}
+.nav a{
+    padding: 10px;
+}
+.content{
+    padding: 50px 10px;
+    width: 900px;
+}
+.content > nav{
+    padding: 20px 0;
+}
+
+.content > nav > div {
+    padding: 10px 0;
+}
+a:hover{
+    background-color: green;
+}
+.content > nav > h3{
+    padding: 20px 0;
+}
+button[variant = "pri"]{
+    width: 150px;
+    padding: 8px;
+    margin: 5px;
+    background-color: #90ef8b;
+    border-color: transparent;
+    border-radius: 10px;
+}
+button[variant = "pri"]:hover{
+    background-color: rgb(227, 227, 119);
+}
+
+/* div > ul li{
+    list-style-type: circle;
+} */

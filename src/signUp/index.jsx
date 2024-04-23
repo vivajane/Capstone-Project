@@ -148,7 +148,7 @@ const Form = function () {
       <div className = "form-check">
         <input type="checkbox" class="form-check-input" id="dropdownCheck"/>
         <label class="form-check-label" for="dropdownCheck">
-        I agree to the terms and conditions
+        By signing up you agree to our <a href="/privacy">Privacy Policy</a>
          
         </label>
 
