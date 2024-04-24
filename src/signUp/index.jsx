@@ -5,6 +5,10 @@ import Footer from "../component/footer";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signUpAction } from "../apiRequest/signup";
+import Loading from '../signIn/loading';
+
+
+
 
 import SignUpModal from "./modal";
 
@@ -39,6 +43,7 @@ export default SignUp;
 
 const Form = function () {
   const [showModal, setShowModal] = useState(false);
+  const[isLoading, setIsLoading] = useState(false)
   const [data, setData] = useState(
     {
       email: "",
@@ -59,12 +64,14 @@ const Form = function () {
   const navigate = useNavigate();
   const onSubmitHandler = async () => {
    try{
+    setIsLoading(true)
     console.log("signing up")
     const user = localStorage.getItem("userType");
     const payLoad = {
       user_type : user,
       ...data,
     }
+  
     
     const response = await signUpAction(payLoad);
     console.log(response, "halooooooo")
@@ -76,6 +83,7 @@ const Form = function () {
       const customerId = actualResponse.user_id;
 
       localStorage.setItem("customers_id", customerId);
+      setIsLoading(false)
       setShowModal(true)
       
       
@@ -163,6 +171,7 @@ const Form = function () {
       </div>
       <Button variant="primary" >Google</Button>
     </form>
+    {isLoading && <div className={styles.loading}>Loading....</div>}
     {showModal === true? < SignUpModal setShowModal={ closeModal}  /> : null } 
 
     </>

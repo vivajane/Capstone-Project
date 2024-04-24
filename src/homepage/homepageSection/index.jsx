@@ -10,11 +10,11 @@ const HomePageSection = function(){
         <div className="container" data-aos="fade-down">
           <div className={styles.section} >
             <div className={styles.para} >
-              <p  data-aos="zoom-in-up" data-aos-delay="600">
+              <p  data-aos="zoom-in-up" data-aos-delay="600" className={styles.p}>
                 Connecting Farmers to Consumers <br /> Without Stress Through
                 Technology
               </p>
-              <p data-aos="fade-up" data-aos-delay="600">
+              <p data-aos="fade-up" data-aos-delay="600" className={styles.pp}>
                 No need for middlemen.Move your produce from farm and factory to
                 table in no time!
               </p>

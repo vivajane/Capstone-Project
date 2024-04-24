@@ -37,7 +37,7 @@
     padding: 10px 0;
 }
 a:hover{
-    background-color: green;
+    /* background-color: green; */
 }
 .content > nav > h3{
     padding: 20px 0;

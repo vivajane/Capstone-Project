@@ -8,6 +8,7 @@ import Footer from "../component/footer";
 import { useState } from "react";
 import { signInAction } from "../apiRequest/login";
 import { useNavigate } from 'react-router-dom';
+import Loading from "./loading";
 
 const SignIn = function () {
   return (
@@ -33,6 +34,7 @@ export default SignIn;
 
 
 const Form = function () {
+  const[isLoading, setIsLoading] = useState(true)
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -48,14 +50,15 @@ const Form = function () {
   const navigate = useNavigate();
  
   const onSubmitHandler = async () => {
-   
-  
+    
     try {
+      setIsLoading(true)
       const res = await signInAction(formData);
       const userForm = res?.data.message[0];
-      console.log(res, "from the signin")
-      console.log(userForm, "from the userform")
-      console.log(userForm.user_type, "ident")
+      // console.log(res, "from the signin")
+      // console.log(userForm, "from the userform")
+      // console.log(userForm.user_type, "ident")
+      setIsLoading(false)
       if (userForm?.user_type === "farmer") {
         navigate("/produceditPage");
       } if(userForm?.user_type === "consumer"){
@@ -88,7 +91,11 @@ const Form = function () {
         <span>or</span>
         <p>Sign in with</p>
       </div>
+      {isLoading && <div className={styles.loading}>Loading....</div>}
       <Button variant="primary" >Google</Button>
+      
     </form>
+    
+    
   );
 } 
