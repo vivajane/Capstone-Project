@@ -6,10 +6,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { signUpAction } from "../apiRequest/signup";
 import Loading from '../signIn/loading';
-
-
-
-
 import SignUpModal from "./modal";
 
 const SignUp = function () {

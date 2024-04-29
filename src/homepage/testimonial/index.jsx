@@ -1,7 +1,7 @@
 import styles from "../home.module.css";
 import "../../App"
 const Testimonial = function(){
-    return <div>
+    return <div className="container">
         <div className={styles.testimonialcon}>
             <div className={styles.testimonial}>
                 <h3>Testimonials</h3>

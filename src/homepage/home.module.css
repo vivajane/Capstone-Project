@@ -152,7 +152,7 @@ margin-left: 70px;
     justify-content: space-around;
     align-items: center;
     height: 200px;
-    width: 1240px;
+    width: 100%;
     margin: 30px auto;
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -173,6 +173,7 @@ margin-left: 70px;
     justify-content: space-between;
     margin: 50px auto;
     gap: 20px;
+    width: 100%;
     padding: 20px;
 }
 .about{
@@ -221,6 +222,7 @@ margin-left: 70px;
 .help{
     background-color: #EBF6EF;
     height: 300px;
+    width: 100%;
     /* border-radius: 10px; */
     /* width: 1220px; */
     /* margin-bottom: 40px; */
@@ -297,7 +299,7 @@ margin-left: 70px;
 }
 .testimonialcon{
     margin: 30px auto;
-    width: 1220px;
+    width: 100%;
 
 }
 
