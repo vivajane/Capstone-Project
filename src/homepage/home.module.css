@@ -26,6 +26,9 @@ body{
 
 
 }
+.nav .container img{
+    width: 70%;
+}
 
 .nav li :hover{
     background-color: #08F25A;
@@ -102,7 +105,7 @@ img {
     width: 100%;
     background-color: #081B11;
     color: #FFFFFF;
-    padding: 50px;
+    padding: 30px;
     /* margin: 20px auto; */
     overflow: hidden;
 }
@@ -122,6 +125,9 @@ img {
     justify-content: space-between;
     margin: 20px auto;
 
+}
+.flexnav h2{
+    font-size: 29px;
 }
 
 .flexnav > * {
@@ -332,6 +338,7 @@ margin-left: 70px;
     nav .container{
         width: 100%;
         font-size: 10px;
+        margin:  auto;
 
     }
     .section{
@@ -522,6 +529,7 @@ margin-left: 70px;
         padding: 2px auto;
         /* margin: auto; */
     }
+ 
     .footer{
         height: 770px;
     }
@@ -578,25 +586,25 @@ margin-left: 70px;
     }
     nav .container{
         font-size: 10px;
+        margin: 10px auto;
         
     }
-    ul > *{
-        padding-right : 2px;
+    .nav .container ul > *{
+        padding-left : 2px;
 
     }
-    nav .container ul{
+    .nav .container ul{
         width: 80%;
         
     }
     .nav .container ul li{
         /* padding: 2px; */
-        /* margin: 0; */
-        padding-top: 22px;
+        padding: 24px auto;
         
     }
     .container img{
         width: 100%;
-        /* text-align: center; */
+        text-align: center;
         /* height: max-content; */
 
     }
@@ -619,7 +627,7 @@ margin-left: 70px;
         width: 100%;
         text-align: center;
         font-size: 10px;
-        padding: 2px auto;
+        padding: 2px;
         margin: 0 -13px;
     }
    
