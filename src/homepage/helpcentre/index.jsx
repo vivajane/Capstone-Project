@@ -1,4 +1,5 @@
 import styles from "../home.module.css";
+import "../../App"
 
 const Products = [
   {
@@ -32,7 +33,7 @@ const Products = [
 ];
 const Helpcentre = function () {
   return (
-    <div>
+    <div className="container">
       <div className={styles.help}>
         <div className={styles.welcome}>
           <h3 data-aos="zoom-in-up" data-aos-delay="600">Welcome to AgroLink 👍 </h3>

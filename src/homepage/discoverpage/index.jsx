@@ -19,12 +19,16 @@ const Discovery = function () {
             </p>
           </div>
           <div>
-            <div>
-              <div className={styles.connectcon} data-aos="zoom-in-up" data-aos-delay="600">
+            <div className={styles.localflex}>
+              <div
+                className={styles.connectcon}
+                data-aos="zoom-in-up"
+                data-aos-delay="600"
+              >
                 <div className={styles.connect}>
                   <img src={connect} alt="connect" />
                 </div>
-                <div>
+                <div className={styles.local}>
                   <p>
                     Connect with local farmers and enjoy a wide variety of{" "}
                     <br /> local and fresh, seasonal produce delivered to your{" "}
@@ -32,12 +36,16 @@ const Discovery = function () {
                   </p>
                 </div>
               </div>
-              <div className={styles.connectcon} data-aos="zoom-in-up" data-aos-delay="600">
+              <div
+                className={styles.connectcon}
+                data-aos="zoom-in-up"
+                data-aos-delay="600"
+              >
                 <div className={styles.connect}>
                   <img src={workshop} alt="workshop" />
                 </div>
-                <div>
-                  <p>
+                <div className={styles.connectt}>
+                  <p className={styles.pra}>
                     Engage in workshops designed to educate both <br /> farmers
                     and consumers on sustaining farming <br /> practices and the
                     benefits of direct sourcing.

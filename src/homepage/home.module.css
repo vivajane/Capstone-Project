@@ -199,7 +199,7 @@ margin-left: 70px;
     background-color: #FFE178;
     height: 450px;
     border-radius: 10px;
-    width: 1220px;
+    width: 100%;
     
 }
 .connectcon{
@@ -328,3 +328,300 @@ margin-left: 70px;
     background-color: #EBF6EF;
 }
 
+@media screen and (max-width:780px){
+    nav .container{
+        width: 100%;
+        font-size: 10px;
+
+    }
+    .section{
+        width: 100% ;
+        font-size: smaller;
+    }
+    .section > div > .p{
+        font-size: 15px;
+        line-height: 29px;
+        margin-top: 90px;
+        padding: 2px;
+    
+    }
+    nav .container ul{
+        width: 80%;
+        
+    }
+    .nav .container ul li{
+        /* padding: 2px; */
+        /* margin: 0; */
+        padding-top: 22px;
+        
+    }
+    .container img{
+        width: 100%;
+        text-align: center;
+        /* height: max-content; */
+
+    }
+    nav .container ul li a{
+        padding : 0;
+    }
+    .fleximage{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .numerals{
+        width: 100%;
+        font-size: small;
+    }
+    .sectionabout{
+        /* width: 100%; */
+        width: 100%;
+        margin-top: 30px;
+        display: grid;
+        margin-bottom: 320px;
+        grid-template-columns: 1fr;
+    }
+    .sectionabout .about{
+     
+        width: 100%;
+    }
+    .sectionabout > div img{
+        width: 100%;
+    
+    }
+    .imgchoose{
+        margin-top: 10px;
+    }
+    .about h1{
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .discover{
+        width: 100%;
+        margin-top: 500px;
+        display: grid;
+        height: 800px;
+        grid-template-columns: 1fr;
+    }
+    .discover > div img{
+        /* margin-top: 5px; */
+    }
+    .discover img{
+        /* width: 100%; */
+        
+    }
+    .localflex{
+        margin-top: 40px;
+        width: 100%;
+        margin-bottom: 90px;
+        padding: 0;
+    }
+    .localflex p {
+        width: 100%;
+    }
+    /* .local p, .connect {
+
+    } */
+    .help{
+        width: 100%;
+        margin-top: 100px;
+        /* font-size: smaller; */
+    }
+    .testimonialcon{
+        width: 100%;
+        font-size: small;
+    }
+    .testimonial{
+        margin-top: 60px;
+    }
+    .testimonial h1{
+        font-size: 17px;
+    }
+    .nextcon {
+        position: relative;
+    }
+    .nextcon .next {
+        font-size: 8px;
+        position: absolute;
+        top: 1px;
+        /* background-color: transparent; */
+        left: 2px;
+
+    }
+    .nextcon p{
+        /* padding: 23px; */
+        text-align: left;
+    }
+    .nextcon .previous{
+        position: absolute;
+        bottom: 5px;
+    }
+    .footer{
+        width: 100%;
+        height: 980px;
+        margin-top: 80px;
+       
+    }
+    .flexitemm{
+        display: grid;
+       
+        grid-template-columns: 1fr;
+    }
+    .flexnav{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0 -8%;
+        text-align: center;
+    }
+    .flexnav > div > ul {
+        width: 100%;
+        text-align: center;
+    }
+    .agrolink{
+        width: 30%;
+        margin: auto;
+        /* margin-top: 30px; */
+    }
+    .divconnect p{
+        width: 100%;
+        margin: 0 70px;
+        font-size: 20px;
+        text-align: start;
+
+    }
+    
+    .flexnav ul li{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        padding: 2px auto;
+        margin: auto;
+    }
+   
+    
+    
+
+    
+}
+@media screen and (max-width: 600px) {
+    
+    .divconnect p{
+        width: 100%;
+        margin: 0 90px;
+        font-size: 10px;
+        text-align: start;
+
+    }
+    .flexnav ul li{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        padding: 2px auto;
+        /* margin: auto; */
+    }
+    .footer{
+        height: 770px;
+    }
+    .testimonialcon{
+        width: 100%;
+        font-size: 10px;
+        height: 500px;
+        
+    }
+    .testimonial{
+        
+        margin-top: 60px;
+    }
+    .testimonialcon p{
+        padding: 25px ;
+
+    }
+    .testimonial h1{
+        font-size: 10px;
+    }
+    .help{
+        width: 100%;
+        margin-top: 100px;
+        font-size: 10px;
+    }
+    .help p{
+        padding: auto;
+    }
+    .discover{
+        font-size: 10px;
+        height: 900px;
+    }
+    .sectionabout{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .sectionabout{
+        margin-bottom: 180px;
+        height: 400px;
+    }
+    .about h1{
+        margin-top: 0;
+    }
+    .discover{
+        width: 100%;
+        margin-top: 100px;
+        display: grid;
+        height: 800px;
+        grid-template-columns: 1fr;
+    }
+    .discover h1{
+        margin: none;
+    }
+    nav .container{
+        font-size: 10px;
+        
+    }
+    ul > *{
+        padding-right : 2px;
+
+    }
+    nav .container ul{
+        width: 80%;
+        
+    }
+    .nav .container ul li{
+        /* padding: 2px; */
+        /* margin: 0; */
+        padding-top: 22px;
+        
+    }
+    .container img{
+        width: 100%;
+        /* text-align: center; */
+        /* height: max-content; */
+
+    }
+    .divconnect p{
+        width: 100%;
+        margin: 0 70px;
+        font-size: 20px;
+        text-align: start;
+
+    }
+    .divconnect p{
+        width: 100%;
+        margin: 10px 2px;
+        padding: 0;
+        font-size: 15px;
+        text-align: start;
+
+    }
+    .flexnav ul li{
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+        padding: 2px auto;
+        margin: 0 -13px;
+    }
+   
+    
+}

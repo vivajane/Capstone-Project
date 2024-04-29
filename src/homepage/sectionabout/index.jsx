@@ -3,7 +3,7 @@ import logo from "../../images/logofour.png";
 import styles from "../home.module.css"
 const Sectionabout = function(){
     return <div className="container">
-        <div className={styles.sectionabout}>
+        <div className={styles.sectionabout }>
             <div data-aos="zoom-in" data-aos-delay="600" >
                 <img src={logo} alt="guy" />
             </div>

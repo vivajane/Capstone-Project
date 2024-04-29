@@ -14,7 +14,7 @@ const Sectionchoose = function(){
                     Join us in supporting local farmers, promoting sustainability, and enjoying the <br /> freshest produce imaginable. Together, let's build a healthier, more connected food <br /> system , one at at a time.
                 </p>
             </div>
-            <div data-aos="zoom-in" data-aos-delay="600" >
+            <div className={styles.imgchoose} data-aos="zoom-in" data-aos-delay="600" >
                 <img src={logochoose} alt="guy" />
             </div>
 
