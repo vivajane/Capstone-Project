@@ -11,8 +11,9 @@ import SignUpModal from "./modal";
 const SignUp = function () {
  
   return (
-    <div className={styles.signuup}>
-      <div className="container">
+    <div className="container">
+      <div className={styles.signuup}>
+      
         <Header />
         <div className={styles.formflextwo}>
           <div
