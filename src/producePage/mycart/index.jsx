@@ -35,7 +35,7 @@ const Carts = [
 ];
 const MyCart = function () {
   const [increase, setIncrease] = useState(0)
-  const [decrease, setDecrease] = useState("")
+ 
   const [deleteitems, setDeleteitems] = useState(Carts)
 
   const deleteHandler = function(id){
@@ -47,14 +47,15 @@ const MyCart = function () {
     setIncrease(increase + 1)
   }
   const ClickHandler = () => {
-    setDecrease(decrease - 1)
+    if (increase > 0)
+    setIncrease(increase - 1)
   }
 
   return (
     <div className={styles.cartt}>
       <div>
         <div className={styles.mycart}>
-          <div>
+          <div className={styles.spancart}>
             <span>My Cart</span>
             <span
               style={{

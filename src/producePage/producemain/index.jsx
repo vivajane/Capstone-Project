@@ -81,7 +81,7 @@ const Producetwo = () => {
     const getProduct = async () => {
       try {
         const res = await allProduct();
-        console.log(res.data)
+        console.log(res.data);
         // const result = await res;
         setProducts(res.data.data);
         // console.log(result);
@@ -95,7 +95,7 @@ const Producetwo = () => {
   console.log(Popularitems, "hello");
 
   return (
-    <div className={styles.pop} >
+    <div className={styles.pop}>
       <ul className={styles.popular}>
         {Popularitems &&
           Popularitems?.map((product) => (
@@ -109,7 +109,6 @@ const Producetwo = () => {
                 <img src={product.star} alt="images" /> <br />
               </a>
               <strong>{product.item} </strong>
-
 
               <div
                 style={{
@@ -141,7 +140,6 @@ const Producetwo = () => {
                   </Button>
                 </div>
               </div>
-              
             </li>
           ))}
       </ul>

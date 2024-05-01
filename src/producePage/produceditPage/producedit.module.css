@@ -290,12 +290,13 @@ button[variant = "cartt"]{
 .cartt{
     height: 700px;
     background-color: #F3F3F3;
-    width: 600px;
-    position: absolute;
+    width: 40%;
+    margin: 50px auto;
+    /* position: absolute;
     top: 50px;
     bottom: 50px;
     right: 50px;
-    left: 300px;
+    left: 300px; */
 }
 /* .bisolid{
     position: relative;
@@ -329,6 +330,7 @@ button[variant = "cartt"]{
 }
 
 .mycart{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -420,6 +422,25 @@ button[variant= "checkout"]{
         gap: 0;
         width: 100%;
         
+    }
+    .cartt{
+        width: 100%;
+        /* margin: auto; */
+    }
+    .cartflex{
+       font-size: 8px;
+       /* width: 100%; */
+       display: flex;
+       justify-content: space-between;
+       gap: 20px;
+       padding: auto;
+
+    }
+    .mycart{
+       font-size: 8px;
+       /* width: 100%; */
+       /* margin: 0; */
+
     }
     
 }

@@ -1,9 +1,8 @@
 .product{
     width: 100%;
     margin: 70px auto;
-    
-    
 }
+
 .flexdeals{
     background-color: #E6F9E5;
     display: flex;
@@ -21,7 +20,7 @@
 }
 .flexi{
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     justify-content: flex-start;
     
@@ -69,6 +68,7 @@ li{
     grid-template-columns:  repeat(5, 1fr);
     margin: 40px 0 ;
     width: 100%;
+    /* padding: auto; */
   
 }
 .spanbtn > * {
@@ -196,10 +196,6 @@ button[variant = "cart"]{
     .popular .li{
         font-size: 9px;
         /* text-align: center; */
-       
-       
-       
-        
 
     }
     .hand{
@@ -224,7 +220,29 @@ button[variant = "cart"]{
     button[variant = "cart"]{
         font-size: 8px;
     }
+ 
     
    
     
+}
+@media screen and (max-width:600px){
+    .popular{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        /* text-align: center; */
+        padding: 11px ;
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    button[variant = "cart"]{
+        font-size: 5px;
+    }
+    .popular .li{
+        font-size: 10px;
+        padding: 10px;
+        /* text-align: center; */
+
+    }
 }

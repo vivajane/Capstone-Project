@@ -28,7 +28,7 @@ const ProduceSection = function () {
                 <img src={Cart.imagesrc} alt="imgg" />
               </div>
             </div>
-            <div>
+            <div className={styles.cartname}>
               <div>
                 <h3>{Cart.name}</h3>
               </div>

@@ -9,8 +9,10 @@ const ProduceSub = function () {
       <div className={styles.flexdeals}>
         <div className={styles.deals}>
           <div className={styles.flexi}>
-            <h2>Hot deals for you!</h2>
-            <img src={logo} alt="jjj" />
+          <h2>Hot deals for you!</h2>
+          <img src={logo} alt="jjj" />
+            
+            
           </div>
           <p>
             AgroLink make getting healthy, fresh food easier <br /> by

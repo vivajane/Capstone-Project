@@ -274,12 +274,13 @@ input{
         height: 1400px;
         font-size: 10px;
         margin-bottom: 10px;
+        width: 80%;
     }
     .consumer ul{
         display: grid;
         grid-template-columns: 1fr;
         margin: 20px auto;
-        width: 130%;
+        /* width: 130%; */
        
     }
     .consumerheader{
@@ -296,9 +297,8 @@ input{
         /* padding: 14px 60px; */
         text-align: center;
         display: flex;
-        margin: 10px -17px;
+        margin: 10px auto;
         justify-content: center;
-        background-color: #FFE178;
         
     }
     .farmer{

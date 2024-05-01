@@ -67,7 +67,7 @@
     margin: 120px auto;
     background-color: #F3F3F3;
     height: 500px;
-    width: 500px;
+    width: 40%;
     padding: 20px ;
     text-align: center;
 }
@@ -123,5 +123,19 @@ button[variant = "tertiary"]{
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .sec , .tert{
+        margin: 10px;
+    }
+    button[variant = "tertiary"]{
+        width: 100px;
+
+    }
+    button[variant = "secondary"]{
+        width: 100px;
+    }
+    .accountcon h3{
+        font-size: 10px;
+    }
+    
     
 }
