@@ -74,7 +74,7 @@ const Producepage = function () {
   
 
   return (
-    <div className="container">
+    <div>
       <Header />
       <Product  />
       <Footer />
@@ -105,6 +105,7 @@ const Product = function () {
   }, [])
   const navigate = useNavigate()
   return (
+    
     <div className={styles.product}>
       <ProduceSub />
       <div className={styles.producelistcontainer}>
@@ -128,7 +129,7 @@ const Product = function () {
         <Producetwo/>
       <div className={styles.hand}>
         <div className={styles.need}>
-          <h3 style={{padding: "10px 0" }} data-aos="flip-up" data-aos-delay="400">
+          <h3 data-aos="flip-up" data-aos-delay="400">
             Connecting Farmers to Consumers <br /> Without Stress Through
             Technology
           </h3>
@@ -153,7 +154,7 @@ const Product = function () {
             </div> */}
           </nav>
         </div>
-        <div>
+        <div className={styles.popularimg}>
           <img src={hand} alt="hand" />
         </div>
       </div>

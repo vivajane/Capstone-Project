@@ -95,7 +95,7 @@ const Producetwo = () => {
   console.log(Popularitems, "hello");
 
   return (
-    <div>
+    <div className={styles.pop} >
       <ul className={styles.popular}>
         {Popularitems &&
           Popularitems?.map((product) => (

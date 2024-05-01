@@ -11,7 +11,7 @@ import SignUpModal from "./modal";
 const SignUp = function () {
  
   return (
-    <div className="container">
+    <div className="containerr">
       <div className={styles.signuup}>
       
         <Header />
@@ -168,7 +168,8 @@ const Form = function () {
       </div>
       <Button variant="primary" >Google</Button>
     </form>
-    {isLoading && <div className={styles.loading}>Loading....</div>}
+    {isLoading  === true? <Loading/> : null}
+   
     {showModal === true? < SignUpModal setShowModal={ closeModal}  /> : null } 
 
     </>

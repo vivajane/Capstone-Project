@@ -145,7 +145,7 @@ export const Produce = function () {
             <img src={Produce?.star} alt="imgg" />
           </div>
         </div>
-        <div>
+        <div className={styles.classclass}>
           <div>
             <h3>{Produce?.item}</h3>
           </div>
@@ -207,7 +207,7 @@ export const Produce = function () {
                   <div>
                     <img src={star} alt="" />
                   </div>
-                  <div>
+                  <div className={styles.free}>
                     <h4>Free delivery</h4>
                     <a href="/">
                       Enter your Postal Code for Delivery Availability

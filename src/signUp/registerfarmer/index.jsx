@@ -68,7 +68,7 @@ const Farmer =  () => {
 
 
   return (
-    <div>
+    <div className="ggg">
       <Header />
       <div className={styles.consumer}>
         <div className={styles.consumerheader}>
@@ -77,7 +77,7 @@ const Farmer =  () => {
             Please, complete your registeration
           </div>
         </div>
-        <div>
+        <div className={styles.farmer}>
           <form onSubmit={onSubmitHandler}>
             <p>Are you a farmer or a processor?</p>
             <div className={styles.farmerradio}>

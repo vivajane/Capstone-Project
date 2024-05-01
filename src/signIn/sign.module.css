@@ -9,7 +9,8 @@
    align-items: flex-start;
    width: 100%;
    padding: 3px 0;
-   height: 100%;
+   /* height: 100%; */
+   height: 900px;
    overflow: hidden;
    margin-top: 72px;
    background-repeat: no-repeat;
@@ -21,7 +22,7 @@
 }
 .formaction{
     background-color: #EBF6EF;
-    height: 450px;
+    height: 500px;
     padding: 20px;
     /* width: 100%; */
     border-radius: 10px;
@@ -138,7 +139,7 @@ input{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.9);
     /* z-index: 99999999; */
     display: flex;
     align-items: center;
@@ -156,9 +157,10 @@ input{
 }
 .consumer{
     background-color: #EBF6EF;
-    width: 500px;
+    width: 50%;
     margin: 200px auto;
     padding: 40px;
+    height: 1300px;
    
 }
 .consumer form input {
@@ -179,6 +181,7 @@ input{
 .consumer ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
 }
 .consumer p{
     padding-top: 20px;
@@ -188,11 +191,12 @@ input{
     background-color: aliceblue;
     border: 1px solid black;
     text-align: center;
-    width: 140px;
+    width: 100%;
     border-radius: 8px;
-    margin-bottom: 5px;
+    margin: 10px auto;
     padding: 10px;
-}.consumer button{
+}
+.consumer button{
     padding: 10px;
 
 }
@@ -222,24 +226,95 @@ input{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(246, 239, 239, 0.95);
     /* z-index: 99999999; */
    
+}
+.loading{
+    color: rgb(7, 7, 7);
+    /* margin-top: 50px; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    left: 30px;
+    right: 70px;
 }
 @media screen and (max-width:600px){
     .formflextwo, .formflex{
         width: 100%;
         display: grid;
-        height: 1000px;
+        height: 850px;
         grid-template-columns: 1fr;
     }
     .formactiontwo, .formaction{
         width: 100%;
         margin: auto;
     }
+    .loader{
+        width: 100%;
+        text-align: center;
+       
+    }
+    .loading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        top: 90px;
+        align-items: center;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+    .consumerheader h2, .consumerheader h5 {
+        font-size: 12px;
+    }
+    .consumer{
+        height: 1400px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .consumer ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px auto;
+        width: 130%;
+       
+    }
+    .consumerheader{
+        width: 100%;
+        /* height: 900px; */
+    }
+    .ull{
+        /* margin: 5px 2px; */
+        /* width: 100%; */
+
+    }
+    .consumer li{
+        width: 100%;
+        /* padding: 14px 60px; */
+        text-align: center;
+        display: flex;
+        margin: 10px -17px;
+        justify-content: center;
+        background-color: #FFE178;
+        
+    }
+    .farmer{
+        margin: 0;
+        /* height: 500px; */
+    }
+    .ggg > .consumer{
+        height:400px
+    }
+    .farmer{
+        padding-bottom: 0;
+    }
 
     
 }
+
 @media screen and (max-width:780px){
     .formflextwo, .formflex{
         width: 100%;
@@ -257,6 +332,9 @@ input{
     }
     form{
         height: 300px;
+    }
+    .consumer{
+        /* height: 1300px; */
     }
 
     

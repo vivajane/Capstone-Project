@@ -30,9 +30,9 @@ const Testimonial = function(){
                     <img src="https://images.pexels.com/photos/5585871/pexels-photo-5585871.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className={styles.avatar} />
                 
                     </div>
-                    <div>
+                    <div className={styles.fellows}>
                     <span>Kosi Vivian</span>
-                    <p>WTF Fellow</p>
+                    <span> (WTF Fellow)</span>
                     </div>
                 
                 </div>

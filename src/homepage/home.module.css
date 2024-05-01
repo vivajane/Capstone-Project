@@ -101,21 +101,24 @@ img {
     gap: 10px;
 }
 .footer{
-    height: 300px;
+    height: 320px;
     width: 100%;
     background-color: #081B11;
     color: #FFFFFF;
-    padding: 30px;
+    padding: 10px;
+    font-size: 13px;
+    
     /* margin: 20px auto; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .flexitemm{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .connect { 
-    padding: 25px 0;
+    padding: 2px 0;
     line-height: 30px;
 
 }
@@ -123,19 +126,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: 20px 2px;
 
 }
 .flexnav h2{
-    font-size: 29px;
+    font-size: 30px;
 }
 
 .flexnav > * {
-margin-left: 70px;
+margin-left: 100px;
 }
+
 .navbar ul{
     list-style: none;
-    margin: 10px auto;
+    margin: 0 auto;
     
     
 }
@@ -438,7 +442,13 @@ margin-left: 70px;
     }
     .testimonialcon{
         width: 100%;
-        font-size: small;
+   
+        
+    }
+    .nextcon p{
+        padding: 40px 10px;
+        font-size: 13px;
+        
     }
     .testimonial{
         margin-top: 60px;
@@ -493,10 +503,11 @@ margin-left: 70px;
         /* margin-top: 30px; */
     }
     .divconnect p{
-        width: 100%;
+        /* width: 100%; */
         margin: 0 70px;
-        font-size: 20px;
-        text-align: start;
+        font-size: 15px;
+        padding: 0 auto;
+        text-align: center;
 
     }
     
@@ -515,13 +526,7 @@ margin-left: 70px;
 }
 @media screen and (max-width: 600px) {
     
-    .divconnect p{
-        width: 100%;
-        margin: 0 90px;
-        font-size: 10px;
-        text-align: start;
 
-    }
     .flexnav ul li{
         width: 100%;
         text-align: center;
@@ -529,9 +534,14 @@ margin-left: 70px;
         padding: 2px auto;
         /* margin: auto; */
     }
+    .flexnav ul{
+        text-align: center;
+        width: 100%;
+        margin: 10px auto;
+    }
  
     .footer{
-        height: 770px;
+        height: 700px;
     }
     .testimonialcon{
         width: 100%;
@@ -546,6 +556,14 @@ margin-left: 70px;
     .testimonialcon p{
         padding: 25px ;
 
+    }
+    .testimonialcon > .customer{
+        height: 330px;
+        
+    }
+   
+    .avatarflex > .fellows > span{
+        padding-top: 15px;
     }
     .testimonial h1{
         font-size: 10px;
@@ -605,30 +623,29 @@ margin-left: 70px;
     .container img{
         width: 100%;
         text-align: center;
-        /* height: max-content; */
 
     }
     .divconnect p{
-        width: 100%;
-        margin: 0 70px;
-        font-size: 20px;
-        text-align: start;
+        font-size: 10px;
+        text-align: center;
 
     }
-    .divconnect p{
-        width: 100%;
-        margin: 10px 2px;
-        padding: 0;
-        font-size: 15px;
-        text-align: start;
-
-    }
+  
     .flexnav ul li{
         width: 100%;
         text-align: center;
         font-size: 10px;
         padding: 2px;
         margin: 0 -13px;
+    }
+    .section .para {
+        margin-top: 100px;
+
+    }
+    .nextcon p{
+        /* padding: 40px 10px; */
+        font-size: 10px;
+        
     }
    
     

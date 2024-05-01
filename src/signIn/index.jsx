@@ -10,10 +10,10 @@ import { signInAction } from "../apiRequest/login";
 import { useNavigate } from 'react-router-dom';
 import Loading from "./loading";
 
-const SignIn = function () {
+const SignIn = function ({isLoading}) {
   return (
-    <div>
-      <div className="container">
+    <div >
+      <div className="containerr">
         <Header/>
         <div className={styles.formflex}>
           <div className={styles.wrap}>
@@ -27,6 +27,8 @@ const SignIn = function () {
         </div>
         <Footer/>
       </div>
+      
+
     </div>
   );
 };
@@ -34,7 +36,7 @@ export default SignIn;
 
 
 const Form = function () {
-  const[isLoading, setIsLoading] = useState(true)
+  const[isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -71,6 +73,7 @@ const Form = function () {
   };
   
   return (
+    <>
     <form onSubmit={ (e) =>{
       e.preventDefault();
       onSubmitHandler()
@@ -91,11 +94,12 @@ const Form = function () {
         <span>or</span>
         <p>Sign in with</p>
       </div>
-      {isLoading && <div className={styles.loading}>Loading....</div>}
+
       <Button variant="primary" >Google</Button>
       
     </form>
-    
-    
+    {isLoading === true? <Loading isLoading = {isLoading} /> :null }
+    </>
   );
 } 
+

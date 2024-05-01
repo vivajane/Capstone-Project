@@ -11,7 +11,7 @@ import Testimonial from "./testimonial";
 // import Faq from "./faq";
 
 const Homepage = function(){
-    return <div className="container">
+    return <div className="containerr">
     <Header/>
     <HomePageSection/>
     <Numerals/>

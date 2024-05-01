@@ -2,6 +2,8 @@
     background-color: #FFFFFF;
     display: flex;
     margin: 10px auto;
+    height: 1600px;
+    width: 100%;
     
    
    
@@ -83,7 +85,7 @@ a{
 .editproduct{
    
     margin: 10px auto;
-    width: 12000px;
+    width: 100%;
     height: 1100px ;
     margin: 90px 0;
     padding: 30px;
@@ -98,7 +100,8 @@ a{
     text-decoration: underline;
 }
 .formproduct{
-    /* height: 1400px; */
+
+    width: 100%;
     
 }
 
@@ -106,7 +109,7 @@ a{
     margin-top: 50px;
 }
 .formproduct input{
-    border: 1px solid black;
+    border: 1px solid #000000;
     padding: 10px;
     border-radius: 5px;
 }
@@ -178,7 +181,7 @@ button[variant = "cartt"]{
 .editproductt{
    
     margin: 10px auto;
-    width: 900px;
+    width: 100%;
     /* height: 900px ; */
     margin: 90px 0;
     padding: 30px;
@@ -264,14 +267,14 @@ button[variant = "cartt"]{
     justify-content: space-between;
     gap: 40px;
     padding: 20px 0;
-    width: 1100px;
+    width: 100%;
    
    
  
 }
 .tubers{
     margin: 1px auto;
-    width: 1100px;
+    width: 100%;
     gap: 40px;
     padding: 10px 0;
 }
@@ -341,5 +344,83 @@ button[variant= "checkout"]{
     background-color: #FFE178;
     border: transparent;
    
+}
+
+@media screen and (max-width:780px) {
+    .tubers > .tubersflexx{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .fish img{
+        width: 100%;
+        height: auto;
+    }
+    .free{
+        width: 100%;
+
+        margin: 20px;
+    }
+    .classclass{
+        padding: auto;
+    }
+
+    .comp{
+        width: 90%;
+      
+
+    }
+    .editproduct{
+        font-size: 10px;
+    }
+    .formflex{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+    .formproduct{
+        width: 100%;
+        font-size: 8px;
+        height: 1000px;
+        padding: 1px auto;
+        margin: auto;
+        
+    }
+    .price{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .finaladd{
+        /* height: 1700px;
+        margin-bottom: 50px; */
+    }
+    
+    .btnflex{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin:0 02px;
+        padding: 2px;
+    }
+    .img{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+    }
+    
+    .formproduct input{
+        width: 100%;
+    }
+    .productsection{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        width: 100%;
+        
+    }
+    
 }
 

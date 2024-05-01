@@ -56,7 +56,7 @@ const SocialMedia = [
 ];
 const Footer = function () {
   return (
-    <div className="container">
+    <div className="containerr">
       <div className={styles.footer}>
         <nav className={styles.navbar}>
           <div className={styles.flexitemm}>

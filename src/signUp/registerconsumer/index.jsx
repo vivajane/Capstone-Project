@@ -87,7 +87,7 @@ const Consumer = () => {
           <div>
             <h5>Please select three or more categories you are interested in</h5>
           </div>
-          <div>
+          <div className={styles.ull}>
             <ul>
               {Items.map((item) => (
                 <li
