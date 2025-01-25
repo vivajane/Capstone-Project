@@ -21,12 +21,14 @@ const Account = function () {
     <div className={styles.accountcon}>
       <h3>Do you want to log out of AfroLink?</h3>
 
-      <div className={styles.sec}>
-      <Button variant="secondary">YES</Button>
+      <div className={styles.accc}>
+        <div className={styles.sec}>
+          <Button variant="secondary">YES</Button>
+        </div>
+        <div className={styles.tert}>
+          <Button variant="tertiary">NO</Button>
+        </div>
       </div>
-     <div className={styles.tert}>
-     <Button variant="tertiary">NO</Button>
-     </div>
     </div>
   );
 };

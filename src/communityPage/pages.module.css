@@ -9,9 +9,9 @@
    justify-content: space-between;
    align-items: center;
    width: 90%;
-   padding: 10px 0;
+   padding: 30px 0;
 
-   margin: 70px auto;
+   margin: 130px auto;
 }
 .logofive{
     display: flex;
@@ -64,10 +64,10 @@
 }
 
 .accountcon{
-    margin: 120px auto;
+    margin: 180px auto;
     background-color: #F3F3F3;
     height: 500px;
-    width: 40%;
+    width: 80%;
     padding: 20px ;
     text-align: center;
 }
@@ -132,6 +132,7 @@ button[variant = "tertiary"]{
     }
     button[variant = "secondary"]{
         width: 100px;
+        
     }
     .accountcon h3{
         font-size: 10px;

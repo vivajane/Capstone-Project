@@ -1,6 +1,8 @@
-
-import styles from "../../homepage/home.module.css"
+import styles from "../../homepage/home.module.css";
 import logo from "../../images/AgroLink.png";
+import { IoMdMenu } from "react-icons/io";
+import { FaTimes } from "react-icons/fa";
+import { useState } from "react";
 const Menus = [
   {
     id: 1,
@@ -31,27 +33,39 @@ const Menus = [
 const Header = function () {
   return (
     <div>
-      <Nav/>
+      <Nav />
     </div>
   );
 };
 
 export default Header;
 
-export const Nav = function(){
-  return <nav className={styles.nav}>
-  <div className={styles.container}>
-    <a href="/">
-      <img src={logo} alt="logo"  />
-    </a>
-    <ul className={styles.list}>
-      {Menus.map((menu) => (
-        <li key={menu.id}>
-          <a href={menu.link}>{menu.title}</a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</nav>
-}
+export const Nav = function () {
+  const [show, setShow] = useState(false);
 
+  const handleShow = () => {
+    setShow((prevShow) => !prevShow);
+  };
+  return (
+    <nav className={styles.nav}>
+      <div className={styles.container}>
+        <div>
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
+        </div>
+
+        <div className={styles.burger} onClick={handleShow}>
+          {show ? <FaTimes size={"30px"} /> : <IoMdMenu size={"30px"} />}
+        </div>
+        <ul className={`${styles.listCon} ${show ? styles.active : ""}`}>
+          {Menus.map((menu) => (
+            <li className={styles.list_item} key={menu.id}>
+              <a href={menu.link}>{menu.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+};
