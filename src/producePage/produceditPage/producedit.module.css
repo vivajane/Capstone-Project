@@ -276,7 +276,10 @@ button[variant = "cartt"]{
     margin: 1px auto;
     width: 100%;
     gap: 40px;
-    padding: 10px 0;
+    padding: 30px;
+}
+.pb p{
+    padding-top: 18px;
 }
 .view{
     display: flex;
@@ -308,11 +311,12 @@ button[variant = "cartt"]{
 .cartflex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    gap: 10px;
 }
 .cartflex .name{
     /* margin: 1px auto; */
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
 .pp{
     display: flex;
@@ -328,12 +332,16 @@ button[variant = "cartt"]{
     
 
 }
+.pp > p{
+    padding-top: 20px;
+}
 
 .mycart{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .fish img{
@@ -349,6 +357,9 @@ button[variant= "checkout"]{
 }
 
 @media screen and (max-width:780px) {
+    .tubers{
+        padding: 20px;
+    }
     .tubers > .tubersflexx{
         display: grid;
         width: 100%;
@@ -368,7 +379,8 @@ button[variant= "checkout"]{
     }
 
     .comp{
-        width: 90%;
+        width: 80%;
+        /* font-size: smaller; */
       
 
     }
@@ -403,7 +415,7 @@ button[variant= "checkout"]{
         display: grid;
         grid-template-columns: 1fr;
         margin:0 02px;
-        padding: 2px;
+        padding: 20px;
     }
     .img{
         display: grid;
@@ -442,6 +454,20 @@ button[variant= "checkout"]{
        /* margin: 0; */
 
     }
+    .pb p{
+        padding-top: 12px;
+    }
+    .name h5{
+        font-size: small;
+    }
+    .tubersflex{
+        display: block;
+    }
+    .editproduct{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
     
 }
 

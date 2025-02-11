@@ -7,10 +7,9 @@ import { useNavigate } from "react-router-dom";
 
 import { farmerResponse } from "../../apiRequest/farmer";
 
-const Farmer =  () => {
-  
-  const [selectedOption, setSelectedOption] = useState('');
-  const [selectedOptiontwo, setSelectedOptiontwo] = useState('');
+const Farmer = () => {
+  const [selectedOption, setSelectedOption] = useState("");
+  const [selectedOptiontwo, setSelectedOptiontwo] = useState("");
   const [formAction, setFormAction] = useState({
     // farmer: "",
     // processor: "",
@@ -34,38 +33,37 @@ const Farmer =  () => {
       [name]: value,
     });
   };
-  const id = () =>{
-    const local = localStorage.getItem("customers_id")
-    return local
-  }
+  const id = () => {
+    const local = localStorage.getItem("customers_id");
+    return local;
+  };
 
- const customers_id = id()
- const navigate = useNavigate()
+  const customers_id = id();
+  const navigate = useNavigate();
 
   const onSubmitHandler = async (e) => {
-    e.preventDefault()
-    console.log("I am here")
+    e.preventDefault();
+    console.log("I am here");
     const Radio = {
-      ...formAction, 
+      ...formAction,
       categories: selectedOption,
-      connectReq : selectedOptiontwo,
-      customers_id : customers_id
-  
-    }
+      connectReq: selectedOptiontwo,
+      customers_id: customers_id,
+    };
 
     try {
       const response = await farmerResponse(Radio);
 
       console.log(response, "submitted");
-      alert('Form submitted successfully!');
-      navigate("/")
-      
+      alert("Form submitted successfully!");
+      navigate("/");
     } catch (error) {
-      console.error('API Error:', error);
-      alert('An error occurred while submitting the form. Please try again later.');
+      console.error("API Error:", error);
+      alert(
+        "An error occurred while submitting the form. Please try again later."
+      );
     }
   };
-
 
   return (
     <div className="ggg">
@@ -81,24 +79,31 @@ const Farmer =  () => {
           <form onSubmit={onSubmitHandler}>
             <p>Are you a farmer or a processor?</p>
             <div className={styles.farmerradio}>
-              <input
-                type="radio"
-                id="farmer"
-          
-                value="farmer"
-                checked={selectedOption === "farmer"}
-                onChange={handleOptionChange}
-              />
-              <label htmlFor="farmer">Farmer</label>
-              <input
-                type="radio"
-                id="processor"
-          
-                value="food processor"
-                checked={selectedOption === "food processor"}
-                onChange={handleOptionChange}
-              />
-              <label htmlFor="processor">Processor</label>
+              <div>
+              <label htmlFor="farmer">
+                <input
+                  type="radio"
+                  id="farmer"
+                  value="farmer"
+                  checked={selectedOption === "farmer"}
+                  onChange={handleOptionChange}
+                />
+                Farmer
+              </label>
+              </div>
+
+              <div>
+              <label htmlFor="processor">
+                <input
+                  type="radio"
+                  id="processor"
+                  value="food processor"
+                  checked={selectedOption === "food processor"}
+                  onChange={handleOptionChange}
+                />
+                Processor
+              </label>
+              </div>
             </div>
             <div>
               <label htmlFor="food">What food item do you produce?</label>
@@ -179,7 +184,9 @@ const Farmer =  () => {
               />
               <label htmlFor="no">No</label>
             </div>
-            <Button type="submit" variant="padded">DONE</Button>
+            <Button type="submit" variant="padded">
+              DONE
+            </Button>
           </form>
         </div>
       </div>

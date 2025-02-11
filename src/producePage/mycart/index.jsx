@@ -80,7 +80,7 @@ const MyCart = function () {
                     <img src={cart.img} alt="ff" />
                   </div>
                   <div className={styles.name}>
-                    <h3>{cart.Name}</h3>
+                    <h5>{cart.Name}</h5>
                     <p>{cart.Type}</p>
                     <p>{cart.Size}</p>
                     <div className={styles.pp}>
