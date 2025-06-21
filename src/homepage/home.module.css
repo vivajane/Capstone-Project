@@ -360,11 +360,11 @@ margin-left: 100px;
     .listCon {
         left: -100%;
         right:0;
-        top: 52px;
+        top: 70px;
         position: fixed;
         flex-direction: column;
         text-align: center;
-        height: 90vh;
+        height: 95vh;
         background-color: rgba(0, 0, 0, 0.9);
         z-index: 999999999999;
         transition: 0.3s ease-in-out;
